@@ -32,6 +32,10 @@
 #ifndef eHealthClassDisplay_h
 #define eHealthClassDisplay_h
 
+#ifndef prog_uint8_t
+#define prog_uint8_t const uint8_t
+#endif
+
 #include "Arduino.h"
 #include <avr/pgmspace.h> 
 
