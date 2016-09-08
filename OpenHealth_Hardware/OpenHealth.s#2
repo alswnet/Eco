@@ -4874,7 +4874,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="BLUETOOTH" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="LCD_I2C" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="JP7" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="LCA_SENSOR_PESO_A" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="LCA_SENSOR_PESO_B" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="PRESION_SANGUIENA" library="transistor" deviceset="2N3904" device=""/>
@@ -4903,7 +4903,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND3" gate="1" x="-63.5" y="134.62"/>
 <instance part="GND4" gate="1" x="-91.44" y="134.62"/>
 <instance part="BLUETOOTH" gate="A" x="38.1" y="142.24"/>
-<instance part="LCD_I2C" gate="A" x="38.1" y="83.82"/>
+<instance part="JP7" gate="A" x="38.1" y="83.82"/>
 <instance part="LCA_SENSOR_PESO_A" gate="A" x="-2.54" y="144.78"/>
 <instance part="LCA_SENSOR_PESO_B" gate="A" x="-33.02" y="144.78"/>
 <instance part="PRESION_SANGUIENA" gate="G1" x="58.42" y="101.6"/>
@@ -4963,7 +4963,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="5.08" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LCD_I2C" gate="A" pin="1"/>
+<pinref part="JP7" gate="A" pin="1"/>
 <wire x1="35.56" y1="88.9" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
 <label x="20.32" y="88.9" size="1.778" layer="95"/>
 </segment>
@@ -4977,26 +4977,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="60.96" y1="96.52" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="CONECTOR_B" gate="A" pin="1"/>
-<wire x1="-76.2" y1="116.84" x2="-68.58" y2="116.84" width="0.1524" layer="91"/>
-<label x="-66.04" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONECTOR_B" gate="A" pin="3"/>
-<wire x1="-76.2" y1="119.38" x2="-68.58" y2="119.38" width="0.1524" layer="91"/>
-<label x="-66.04" y="119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONECTOR_A" gate="A" pin="9"/>
-<wire x1="-76.2" y1="106.68" x2="-68.58" y2="106.68" width="0.1524" layer="91"/>
-<label x="-66.04" y="106.68" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONECTOR_B" gate="A" pin="9"/>
-<wire x1="-76.2" y1="127" x2="-68.58" y2="127" width="0.1524" layer="91"/>
-<label x="-66.04" y="127" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -5008,7 +4988,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="-63.5" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LCD_I2C" gate="A" pin="2"/>
+<pinref part="JP7" gate="A" pin="2"/>
 <wire x1="35.56" y1="86.36" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
 <label x="20.32" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -5027,10 +5007,19 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-12.7" y1="147.32" x2="-5.08" y2="147.32" width="0.1524" layer="91"/>
 <label x="-25.4" y="147.32" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="D9" class="0">
 <segment>
-<pinref part="CONECTOR_B" gate="A" pin="5"/>
-<wire x1="-76.2" y1="121.92" x2="-68.58" y2="121.92" width="0.1524" layer="91"/>
-<label x="-66.04" y="121.92" size="1.778" layer="95"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="9/RX2/PWM"/>
+<wire x1="-10.16" y1="88.9" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
+<label x="-2.54" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D10" class="0">
+<segment>
+<pinref part="OPENHEALTH" gate="G$1" pin="10/TX2/PWM"/>
+<wire x1="-10.16" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
+<label x="-2.54" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -5111,11 +5100,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-55.88" y1="68.58" x2="-58.42" y2="68.58" width="0.1524" layer="91"/>
 <label x="-63.5" y="68.58" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="CONECTOR_B" gate="A" pin="7"/>
-<wire x1="-76.2" y1="124.46" x2="-68.58" y2="124.46" width="0.1524" layer="91"/>
-<label x="-66.04" y="124.46" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="RL" class="0">
 <segment>
@@ -5153,28 +5137,60 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="-99.06" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BPM_RX" class="0">
+<net name="A_P9" class="0">
+<segment>
+<pinref part="CONECTOR_A" gate="A" pin="9"/>
+<wire x1="-76.2" y1="106.68" x2="-68.58" y2="106.68" width="0.1524" layer="91"/>
+<label x="-66.04" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A_P7" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="7"/>
 <wire x1="-76.2" y1="104.14" x2="-68.58" y2="104.14" width="0.1524" layer="91"/>
 <label x="-66.04" y="104.14" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="OPENHEALTH" gate="G$1" pin="10/TX2/PWM"/>
-<wire x1="-10.16" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
-<label x="-2.54" y="91.44" size="1.778" layer="95"/>
-</segment>
 </net>
-<net name="BPM_TX" class="0">
+<net name="A_P5" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="5"/>
 <wire x1="-76.2" y1="101.6" x2="-68.58" y2="101.6" width="0.1524" layer="91"/>
 <label x="-66.04" y="101.6" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="B_P1" class="0">
 <segment>
-<pinref part="OPENHEALTH" gate="G$1" pin="9/RX2/PWM"/>
-<wire x1="-10.16" y1="88.9" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
-<label x="-2.54" y="88.9" size="1.778" layer="95"/>
+<pinref part="CONECTOR_B" gate="A" pin="1"/>
+<wire x1="-76.2" y1="116.84" x2="-68.58" y2="116.84" width="0.1524" layer="91"/>
+<label x="-66.04" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_P3" class="0">
+<segment>
+<pinref part="CONECTOR_B" gate="A" pin="3"/>
+<wire x1="-76.2" y1="119.38" x2="-68.58" y2="119.38" width="0.1524" layer="91"/>
+<label x="-66.04" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_P5" class="0">
+<segment>
+<pinref part="CONECTOR_B" gate="A" pin="5"/>
+<wire x1="-76.2" y1="121.92" x2="-68.58" y2="121.92" width="0.1524" layer="91"/>
+<label x="-66.04" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_P7" class="0">
+<segment>
+<pinref part="CONECTOR_B" gate="A" pin="7"/>
+<wire x1="-76.2" y1="124.46" x2="-68.58" y2="124.46" width="0.1524" layer="91"/>
+<label x="-66.04" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B_P9" class="0">
+<segment>
+<pinref part="CONECTOR_B" gate="A" pin="9"/>
+<wire x1="-76.2" y1="127" x2="-68.58" y2="127" width="0.1524" layer="91"/>
+<label x="-66.04" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -5281,7 +5297,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="D_SDA" class="0">
 <segment>
-<pinref part="LCD_I2C" gate="A" pin="3"/>
+<pinref part="JP7" gate="A" pin="3"/>
 <wire x1="35.56" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <label x="20.32" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -5293,7 +5309,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="D_SCL" class="0">
 <segment>
-<pinref part="LCD_I2C" gate="A" pin="4"/>
+<pinref part="JP7" gate="A" pin="4"/>
 <wire x1="35.56" y1="81.28" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
 <label x="20.32" y="81.28" size="1.778" layer="95"/>
 </segment>
