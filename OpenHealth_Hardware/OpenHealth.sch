@@ -802,6 +802,50 @@
 <pad name="5" x="4" y="0" drill="1.016" diameter="1.3" rot="R90"/>
 <rectangle x1="3.746" y1="-0.254" x2="4.254" y2="0.254" layer="51"/>
 </package>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PINHD4">
@@ -871,6 +915,16 @@
 <pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="5" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1045,6 +1099,32 @@
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
 <connect gate="A" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4879,10 +4959,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="LCA_SENSOR_PESO_B" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="PRESION_SANGUIENA" library="transistor" deviceset="2N3904" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="5.08" y="137.16" size="1.778" layer="91">BLUETOOTH_KEY</text>
+<text x="5.08" y="149.86" size="1.778" layer="91">STATE</text>
+<text x="20.32" y="99.06" size="1.778" layer="91">SDN</text>
 </plain>
 <instances>
 <instance part="OPENHEALTH" gate="G$1" x="-33.02" y="93.98" rot="R180"/>
@@ -4908,6 +4992,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="LCA_SENSOR_PESO_B" gate="A" x="-33.02" y="144.78"/>
 <instance part="PRESION_SANGUIENA" gate="G1" x="58.42" y="101.6"/>
 <instance part="GND5" gate="1" x="60.96" y="88.9"/>
+<instance part="JP1" gate="G$1" x="38.1" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -5059,13 +5144,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="CONECTOR_A" gate="A" pin="10"/>
 <wire x1="-83.82" y1="106.68" x2="-91.44" y2="106.68" width="0.1524" layer="91"/>
 <label x="-99.06" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SDN" class="0">
-<segment>
-<pinref part="AD8232_A" gate="A" pin="6"/>
-<wire x1="35.56" y1="99.06" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
-<label x="20.32" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LO+" class="0">
@@ -5241,13 +5319,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="-2.54" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BLUETOOTH_KEY" class="0">
-<segment>
-<pinref part="BLUETOOTH" gate="A" pin="6"/>
-<wire x1="35.56" y1="137.16" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
-<label x="5.08" y="137.16" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BLUETOOTH_RX" class="0">
 <segment>
 <pinref part="BLUETOOTH" gate="A" pin="2"/>
@@ -5258,13 +5329,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="OPENHEALTH" gate="G$1" pin="8/TX3"/>
 <wire x1="-10.16" y1="86.36" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
 <label x="-2.54" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STATE" class="0">
-<segment>
-<pinref part="BLUETOOTH" gate="A" pin="1"/>
-<wire x1="35.56" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
-<label x="5.08" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BLUETOOTH_TX" class="0">
@@ -5451,6 +5515,25 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,35.56,71.12,JP1,1,,,,"/>
+<approved hash="101,1,35.56,68.58,JP1,2,,,,"/>
+<approved hash="204,1,-55.88,86.36,OPENHEALTH,AGND,,,,"/>
+<approved hash="204,1,-55.88,71.12,OPENHEALTH,VBAT,,,,"/>
+<approved hash="113,1,-101.269,73.5288,CONECTOR_VOLTAJE,,,,,"/>
+<approved hash="113,1,-81.28,60.136,X1,,,,,"/>
+<approved hash="113,1,-81.2222,100.199,CONECTOR_A,,,,,"/>
+<approved hash="113,1,-81.2222,120.519,CONECTOR_B,,,,,"/>
+<approved hash="113,1,37.8999,106.811,AD8232_A,,,,,"/>
+<approved hash="113,1,37.8999,125.861,AD8232_B,,,,,"/>
+<approved hash="113,1,-111.371,147.583,BOTON_1,,,,,"/>
+<approved hash="113,1,-83.4305,147.583,BOTON_2,,,,,"/>
+<approved hash="113,1,39.5244,144.911,BLUETOOTH,,,,,"/>
+<approved hash="113,1,36.9806,86.4912,LCD_I2C,,,,,"/>
+<approved hash="113,1,5.45834,146.181,LCA_SENSOR_PESO_A,,,,,"/>
+<approved hash="113,1,-25.0217,146.181,LCA_SENSOR_PESO_B,,,,,"/>
+<approved hash="113,1,35.7971,71.2512,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

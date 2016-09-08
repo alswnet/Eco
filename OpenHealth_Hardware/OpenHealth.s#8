@@ -4857,26 +4857,26 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="ECO" library="Teensy_3_and_LC_Series_Boards_v1.1" deviceset="TEENSY_3.1_OUTER_ROW" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="OPENHEALTH" library="Teensy_3_and_LC_Series_Boards_v1.1" deviceset="TEENSY_3.1_OUTER_ROW" device=""/>
+<part name="CONECTOR_VOLTAJE" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="X1" library="con-wago-500" deviceset="W237-102" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-2X5" device=""/>
-<part name="JP3" library="pinhead" deviceset="PINHD-2X5" device=""/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="CONECTOR_A" library="pinhead" deviceset="PINHD-2X5" device=""/>
+<part name="CONECTOR_B" library="pinhead" deviceset="PINHD-2X5" device=""/>
+<part name="AD8232_A" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="AD8232_B" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-RGB-CC-THRU" device="CLEAR"/>
-<part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
-<part name="S2" library="switch-omron" deviceset="10-XX" device=""/>
+<part name="LED_RGB" library="SparkFun-LED" deviceset="LED-RGB-CC-THRU" device="CLEAR"/>
+<part name="BOTON_1" library="switch-omron" deviceset="10-XX" device=""/>
+<part name="BOTON_2" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="0204/7"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="0204/7"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="JP6" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="BLUETOOTH" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="JP7" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="JP8" library="pinhead" deviceset="PINHD-1X5" device=""/>
-<part name="JP9" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="LCA_SENSOR_PESO_A" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="LCA_SENSOR_PESO_B" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="T1" library="transistor" deviceset="2N3904" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
@@ -4885,29 +4885,29 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="ECO" gate="G$1" x="-33.02" y="93.98" rot="R180"/>
-<instance part="JP2" gate="A" x="-93.98" y="76.2" rot="R180"/>
+<instance part="OPENHEALTH" gate="G$1" x="-33.02" y="93.98" rot="R180"/>
+<instance part="CONECTOR_VOLTAJE" gate="A" x="-93.98" y="76.2" rot="R180"/>
 <instance part="X1" gate="-1" x="-81.28" y="58.42" rot="R90"/>
 <instance part="X1" gate="-2" x="-76.2" y="58.42" rot="R90"/>
-<instance part="JP1" gate="A" x="-73.66" y="101.6" rot="R180"/>
-<instance part="JP3" gate="A" x="-73.66" y="121.92" rot="R180"/>
-<instance part="JP4" gate="A" x="38.1" y="104.14"/>
-<instance part="JP5" gate="A" x="38.1" y="124.46"/>
-<instance part="GND1" gate="1" x="55.88" y="127"/>
+<instance part="CONECTOR_A" gate="A" x="-73.66" y="101.6" rot="R180"/>
+<instance part="CONECTOR_B" gate="A" x="-73.66" y="121.92" rot="R180"/>
+<instance part="AD8232_A" gate="A" x="38.1" y="104.14"/>
+<instance part="AD8232_B" gate="A" x="38.1" y="124.46"/>
+<instance part="GND1" gate="1" x="58.42" y="121.92"/>
 <instance part="GND2" gate="1" x="-68.58" y="58.42"/>
-<instance part="D1" gate="G$1" x="55.88" y="142.24" rot="R270"/>
-<instance part="S1" gate="1" x="-109.22" y="147.32"/>
-<instance part="S2" gate="1" x="-81.28" y="147.32"/>
+<instance part="LED_RGB" gate="G$1" x="58.42" y="137.16" rot="R270"/>
+<instance part="BOTON_1" gate="1" x="-109.22" y="147.32"/>
+<instance part="BOTON_2" gate="1" x="-81.28" y="147.32"/>
 <instance part="R1" gate="G$1" x="-99.06" y="139.7"/>
 <instance part="R2" gate="G$1" x="-71.12" y="139.7"/>
 <instance part="GND3" gate="1" x="-63.5" y="134.62"/>
 <instance part="GND4" gate="1" x="-91.44" y="134.62"/>
-<instance part="JP6" gate="A" x="38.1" y="142.24"/>
+<instance part="BLUETOOTH" gate="A" x="38.1" y="142.24"/>
 <instance part="JP7" gate="A" x="38.1" y="83.82"/>
-<instance part="JP8" gate="A" x="-2.54" y="144.78"/>
-<instance part="JP9" gate="A" x="-33.02" y="144.78"/>
-<instance part="T1" gate="G1" x="55.88" y="106.68"/>
-<instance part="GND5" gate="1" x="58.42" y="93.98"/>
+<instance part="LCA_SENSOR_PESO_A" gate="A" x="-2.54" y="144.78"/>
+<instance part="LCA_SENSOR_PESO_B" gate="A" x="-33.02" y="144.78"/>
+<instance part="T1" gate="G1" x="58.42" y="101.6"/>
+<instance part="GND5" gate="1" x="60.96" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -4916,34 +4916,34 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="X1" gate="-1" pin="KL"/>
 <wire x1="-81.28" y1="71.12" x2="-81.28" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="CONECTOR_VOLTAJE" gate="A" pin="1"/>
 <wire x1="-91.44" y1="71.12" x2="-81.28" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="CONECTOR_VOLTAJE" gate="A" pin="2"/>
 <wire x1="-91.44" y1="73.66" x2="-76.2" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-2" pin="KL"/>
 <wire x1="-76.2" y1="73.66" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="73.66" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="63.5" x2="-76.2" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-76.2" y="73.66"/>
-<pinref part="ECO" gate="G$1" pin="GND"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="GND"/>
 <label x="-63.5" y="71.12" size="1.778" layer="95"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="-68.58" y1="60.96" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-68.58" y="73.66"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="A" pin="1"/>
+<pinref part="AD8232_A" gate="A" pin="1"/>
 <wire x1="35.56" y1="111.76" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
 <label x="20.32" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="D1" gate="G$1" pin="CATHODE"/>
-<wire x1="55.88" y1="129.54" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="LED_RGB" gate="G$1" pin="CATHODE"/>
+<wire x1="58.42" y1="124.46" x2="58.42" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -4958,7 +4958,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-91.44" y1="139.7" x2="-91.44" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="A" pin="4"/>
+<pinref part="BLUETOOTH" gate="A" pin="4"/>
 <wire x1="35.56" y1="142.24" x2="27.94" y2="142.24" width="0.1524" layer="91"/>
 <label x="5.08" y="142.24" size="1.778" layer="95"/>
 </segment>
@@ -4968,22 +4968,22 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="20.32" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP8" gate="A" pin="5"/>
+<pinref part="LCA_SENSOR_PESO_A" gate="A" pin="5"/>
 <wire x1="-12.7" y1="139.7" x2="-5.08" y2="139.7" width="0.1524" layer="91"/>
 <label x="-25.4" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="T1" gate="G1" pin="E"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="58.42" y1="101.6" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="96.52" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="CONECTOR_VOLTAJE" gate="A" pin="3"/>
 <wire x1="-91.44" y1="76.2" x2="-73.66" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="76.2" x2="-73.66" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="ECO" gate="G$1" pin="VIN"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="VIN"/>
 <wire x1="-73.66" y1="66.04" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
 <label x="-63.5" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -4993,301 +4993,311 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="20.32" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="A" pin="5"/>
+<pinref part="BLUETOOTH" gate="A" pin="5"/>
 <wire x1="35.56" y1="139.7" x2="27.94" y2="139.7" width="0.1524" layer="91"/>
 <label x="5.08" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LCA_SENSOR_PESO_A" gate="A" pin="1"/>
+<wire x1="-12.7" y1="149.86" x2="-5.08" y2="149.86" width="0.1524" layer="91"/>
+<label x="-25.4" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LCA_SENSOR_PESO_A" gate="A" pin="2"/>
+<wire x1="-12.7" y1="147.32" x2="-5.08" y2="147.32" width="0.1524" layer="91"/>
+<label x="-25.4" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D9" class="0">
 <segment>
-<pinref part="ECO" gate="G$1" pin="9/RX2/PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="9/RX2/PWM"/>
 <wire x1="-10.16" y1="88.9" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
 <label x="-2.54" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D10" class="0">
 <segment>
-<pinref part="ECO" gate="G$1" pin="10/TX2/PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="10/TX2/PWM"/>
 <wire x1="-10.16" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
 <label x="-2.54" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11" class="0">
 <segment>
-<pinref part="ECO" gate="G$1" pin="11/MOSI"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="11/MOSI"/>
 <wire x1="-10.16" y1="93.98" x2="-5.08" y2="93.98" width="0.1524" layer="91"/>
 <label x="-2.54" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="8"/>
+<pinref part="CONECTOR_A" gate="A" pin="8"/>
 <wire x1="-78.74" y1="104.14" x2="-86.36" y2="104.14" width="0.1524" layer="91"/>
 <label x="-93.98" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D12" class="0">
 <segment>
-<pinref part="ECO" gate="G$1" pin="12/MISO"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="12/MISO"/>
 <wire x1="-10.16" y1="96.52" x2="-5.08" y2="96.52" width="0.1524" layer="91"/>
 <label x="-2.54" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="10"/>
+<pinref part="CONECTOR_A" gate="A" pin="10"/>
 <wire x1="-78.74" y1="106.68" x2="-86.36" y2="106.68" width="0.1524" layer="91"/>
 <label x="-93.98" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDN" class="0">
 <segment>
-<pinref part="JP4" gate="A" pin="6"/>
+<pinref part="AD8232_A" gate="A" pin="6"/>
 <wire x1="35.56" y1="99.06" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
 <label x="20.32" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LO+" class="0">
 <segment>
-<pinref part="JP4" gate="A" pin="5"/>
+<pinref part="AD8232_A" gate="A" pin="5"/>
 <wire x1="35.56" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 <label x="20.32" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="2"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="2"/>
 <wire x1="-10.16" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
 <label x="-2.54" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LO-" class="0">
 <segment>
-<pinref part="JP4" gate="A" pin="4"/>
+<pinref part="AD8232_A" gate="A" pin="4"/>
 <wire x1="35.56" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
 <label x="20.32" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="3/CAN-TX/PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="3/CAN-TX/PWM"/>
 <wire x1="-10.16" y1="73.66" x2="-5.08" y2="73.66" width="0.1524" layer="91"/>
 <label x="-2.54" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUTPUT" class="0">
 <segment>
-<pinref part="JP4" gate="A" pin="3"/>
+<pinref part="AD8232_A" gate="A" pin="3"/>
 <wire x1="27.94" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 <label x="20.32" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="17/A3/T"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="17/A3/T"/>
 <wire x1="-10.16" y1="109.22" x2="-5.08" y2="109.22" width="0.1524" layer="91"/>
 <label x="-2.54" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="JP4" gate="A" pin="2"/>
+<pinref part="AD8232_A" gate="A" pin="2"/>
 <wire x1="27.94" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
 <label x="20.32" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="3.3V"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="3.3V"/>
 <wire x1="-55.88" y1="68.58" x2="-58.42" y2="68.58" width="0.1524" layer="91"/>
 <label x="-63.5" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RL" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="3"/>
+<pinref part="AD8232_B" gate="A" pin="3"/>
 <wire x1="35.56" y1="121.92" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
 <label x="22.86" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="CONECTOR_A" gate="A" pin="2"/>
 <wire x1="-78.74" y1="96.52" x2="-86.36" y2="96.52" width="0.1524" layer="91"/>
 <label x="-93.98" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LA" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="2"/>
+<pinref part="AD8232_B" gate="A" pin="2"/>
 <wire x1="35.56" y1="124.46" x2="27.94" y2="124.46" width="0.1524" layer="91"/>
 <label x="22.86" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="CONECTOR_A" gate="A" pin="4"/>
 <wire x1="-78.74" y1="99.06" x2="-86.36" y2="99.06" width="0.1524" layer="91"/>
 <label x="-93.98" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RA" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="1"/>
+<pinref part="AD8232_B" gate="A" pin="1"/>
 <wire x1="35.56" y1="127" x2="27.94" y2="127" width="0.1524" layer="91"/>
 <label x="22.86" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="CONECTOR_A" gate="A" pin="6"/>
 <wire x1="-78.74" y1="101.6" x2="-86.36" y2="101.6" width="0.1524" layer="91"/>
 <label x="-93.98" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A_P9" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="9"/>
+<pinref part="CONECTOR_A" gate="A" pin="9"/>
 <wire x1="-71.12" y1="106.68" x2="-63.5" y2="106.68" width="0.1524" layer="91"/>
 <label x="-60.96" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A_P7" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="7"/>
+<pinref part="CONECTOR_A" gate="A" pin="7"/>
 <wire x1="-71.12" y1="104.14" x2="-63.5" y2="104.14" width="0.1524" layer="91"/>
 <label x="-60.96" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A_P5" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="CONECTOR_A" gate="A" pin="5"/>
 <wire x1="-71.12" y1="101.6" x2="-63.5" y2="101.6" width="0.1524" layer="91"/>
 <label x="-60.96" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A_P3" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="CONECTOR_A" gate="A" pin="3"/>
 <wire x1="-71.12" y1="99.06" x2="-63.5" y2="99.06" width="0.1524" layer="91"/>
 <label x="-60.96" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B_P1" class="0">
 <segment>
-<pinref part="JP3" gate="A" pin="1"/>
+<pinref part="CONECTOR_B" gate="A" pin="1"/>
 <wire x1="-71.12" y1="116.84" x2="-63.5" y2="116.84" width="0.1524" layer="91"/>
 <label x="-60.96" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B_P3" class="0">
 <segment>
-<pinref part="JP3" gate="A" pin="3"/>
+<pinref part="CONECTOR_B" gate="A" pin="3"/>
 <wire x1="-71.12" y1="119.38" x2="-63.5" y2="119.38" width="0.1524" layer="91"/>
 <label x="-60.96" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B_P5" class="0">
 <segment>
-<pinref part="JP3" gate="A" pin="5"/>
+<pinref part="CONECTOR_B" gate="A" pin="5"/>
 <wire x1="-71.12" y1="121.92" x2="-63.5" y2="121.92" width="0.1524" layer="91"/>
 <label x="-60.96" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B_P7" class="0">
 <segment>
-<pinref part="JP3" gate="A" pin="7"/>
+<pinref part="CONECTOR_B" gate="A" pin="7"/>
 <wire x1="-71.12" y1="124.46" x2="-63.5" y2="124.46" width="0.1524" layer="91"/>
 <label x="-60.96" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B_P9" class="0">
 <segment>
-<pinref part="JP3" gate="A" pin="9"/>
+<pinref part="CONECTOR_B" gate="A" pin="9"/>
 <wire x1="-71.12" y1="127" x2="-63.5" y2="127" width="0.1524" layer="91"/>
 <label x="-60.96" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="ECO" gate="G$1" pin="14/A0"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="14/A0"/>
 <wire x1="-10.16" y1="101.6" x2="-5.08" y2="101.6" width="0.1524" layer="91"/>
 <label x="-2.54" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="CONECTOR_A" gate="A" pin="1"/>
 <wire x1="-71.12" y1="96.52" x2="-63.5" y2="96.52" width="0.1524" layer="91"/>
 <label x="-60.96" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="S1" gate="1" pin="P1"/>
+<pinref part="BOTON_1" gate="1" pin="P1"/>
 <wire x1="-106.68" y1="142.24" x2="-106.68" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-106.68" y1="139.7" x2="-104.14" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="S1" gate="1" pin="P"/>
+<pinref part="BOTON_1" gate="1" pin="P"/>
 <wire x1="-109.22" y1="142.24" x2="-106.68" y2="142.24" width="0.1524" layer="91"/>
 <junction x="-106.68" y="142.24"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="S2" gate="1" pin="P1"/>
+<pinref part="BOTON_2" gate="1" pin="P1"/>
 <wire x1="-78.74" y1="142.24" x2="-78.74" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="139.7" x2="-76.2" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="S2" gate="1" pin="P"/>
+<pinref part="BOTON_2" gate="1" pin="P"/>
 <wire x1="-81.28" y1="142.24" x2="-78.74" y2="142.24" width="0.1524" layer="91"/>
 <junction x="-78.74" y="142.24"/>
 </segment>
 </net>
 <net name="B2" class="0">
 <segment>
-<pinref part="S2" gate="1" pin="S"/>
-<pinref part="S2" gate="1" pin="S1"/>
+<pinref part="BOTON_2" gate="1" pin="S"/>
+<pinref part="BOTON_2" gate="1" pin="S1"/>
 <wire x1="-81.28" y1="152.4" x2="-78.74" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="152.4" x2="-76.2" y2="152.4" width="0.1524" layer="91"/>
 <junction x="-78.74" y="152.4"/>
 <label x="-76.2" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="5/PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="5/PWM"/>
 <wire x1="-10.16" y1="78.74" x2="-5.08" y2="78.74" width="0.1524" layer="91"/>
 <label x="-2.54" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B1" class="0">
 <segment>
-<pinref part="S1" gate="1" pin="S"/>
-<pinref part="S1" gate="1" pin="S1"/>
+<pinref part="BOTON_1" gate="1" pin="S"/>
+<pinref part="BOTON_1" gate="1" pin="S1"/>
 <wire x1="-109.22" y1="152.4" x2="-106.68" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-106.68" y1="152.4" x2="-104.14" y2="152.4" width="0.1524" layer="91"/>
 <junction x="-106.68" y="152.4"/>
 <label x="-104.14" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="4/CAN-RX-PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="4/CAN-RX-PWM"/>
 <wire x1="-10.16" y1="76.2" x2="-5.08" y2="76.2" width="0.1524" layer="91"/>
 <label x="-2.54" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BLUETOOTH_KEY" class="0">
 <segment>
-<pinref part="JP6" gate="A" pin="6"/>
+<pinref part="BLUETOOTH" gate="A" pin="6"/>
 <wire x1="35.56" y1="137.16" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
 <label x="5.08" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BLUETOOTH_RX" class="0">
 <segment>
-<pinref part="JP6" gate="A" pin="2"/>
+<pinref part="BLUETOOTH" gate="A" pin="2"/>
 <wire x1="35.56" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
 <label x="5.08" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="8/TX3"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="8/TX3"/>
 <wire x1="-10.16" y1="86.36" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
 <label x="-2.54" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="STATE" class="0">
 <segment>
-<pinref part="JP6" gate="A" pin="1"/>
+<pinref part="BLUETOOTH" gate="A" pin="1"/>
 <wire x1="35.56" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
 <label x="5.08" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BLUETOOTH_TX" class="0">
 <segment>
-<pinref part="JP6" gate="A" pin="3"/>
+<pinref part="BLUETOOTH" gate="A" pin="3"/>
 <wire x1="35.56" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 <label x="5.08" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="7/RX3"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="7/RX3"/>
 <wire x1="-10.16" y1="83.82" x2="-5.08" y2="83.82" width="0.1524" layer="91"/>
 <label x="-2.54" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -5299,7 +5309,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="20.32" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="18/A4/T/SDA0"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="18/A4/T/SDA0"/>
 <wire x1="-10.16" y1="111.76" x2="-5.08" y2="111.76" width="0.1524" layer="91"/>
 <label x="-2.54" y="111.76" size="1.778" layer="95"/>
 </segment>
@@ -5311,105 +5321,91 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="20.32" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="19/A5/T/SCL0"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="19/A5/T/SCL0"/>
 <wire x1="-10.16" y1="114.3" x2="-5.08" y2="114.3" width="0.1524" layer="91"/>
 <label x="-2.54" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LCA_VDD" class="0">
-<segment>
-<pinref part="JP8" gate="A" pin="1"/>
-<wire x1="-12.7" y1="149.86" x2="-5.08" y2="149.86" width="0.1524" layer="91"/>
-<label x="-25.4" y="149.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LCA_VCC" class="0">
-<segment>
-<pinref part="JP8" gate="A" pin="2"/>
-<wire x1="-12.7" y1="147.32" x2="-5.08" y2="147.32" width="0.1524" layer="91"/>
-<label x="-25.4" y="147.32" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LCA_DAT" class="0">
 <segment>
-<pinref part="JP8" gate="A" pin="3"/>
+<pinref part="LCA_SENSOR_PESO_A" gate="A" pin="3"/>
 <wire x1="-12.7" y1="144.78" x2="-5.08" y2="144.78" width="0.1524" layer="91"/>
 <label x="-25.4" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="16/A2/T"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="16/A2/T"/>
 <wire x1="-10.16" y1="106.68" x2="-5.08" y2="106.68" width="0.1524" layer="91"/>
 <label x="-2.54" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCA_CLK" class="0">
 <segment>
-<pinref part="JP8" gate="A" pin="4"/>
+<pinref part="LCA_SENSOR_PESO_A" gate="A" pin="4"/>
 <wire x1="-12.7" y1="142.24" x2="-5.08" y2="142.24" width="0.1524" layer="91"/>
 <label x="-25.4" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="15/A1/T"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="15/A1/T"/>
 <wire x1="-10.16" y1="104.14" x2="-5.08" y2="104.14" width="0.1524" layer="91"/>
 <label x="-2.54" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCA_RED" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="1"/>
+<pinref part="LCA_SENSOR_PESO_B" gate="A" pin="1"/>
 <wire x1="-43.18" y1="149.86" x2="-35.56" y2="149.86" width="0.1524" layer="91"/>
 <label x="-55.88" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="10"/>
+<pinref part="CONECTOR_B" gate="A" pin="10"/>
 <wire x1="-78.74" y1="127" x2="-86.36" y2="127" width="0.1524" layer="91"/>
 <label x="-99.06" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCA_BLK" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="2"/>
+<pinref part="LCA_SENSOR_PESO_B" gate="A" pin="2"/>
 <wire x1="-43.18" y1="147.32" x2="-35.56" y2="147.32" width="0.1524" layer="91"/>
 <label x="-55.88" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="8"/>
+<pinref part="CONECTOR_B" gate="A" pin="8"/>
 <wire x1="-78.74" y1="124.46" x2="-86.36" y2="124.46" width="0.1524" layer="91"/>
 <label x="-99.06" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCA_WHT" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="3"/>
+<pinref part="LCA_SENSOR_PESO_B" gate="A" pin="3"/>
 <wire x1="-43.18" y1="144.78" x2="-35.56" y2="144.78" width="0.1524" layer="91"/>
 <label x="-55.88" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="6"/>
+<pinref part="CONECTOR_B" gate="A" pin="6"/>
 <wire x1="-78.74" y1="121.92" x2="-86.36" y2="121.92" width="0.1524" layer="91"/>
 <label x="-99.06" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCA_GRN" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="4"/>
+<pinref part="LCA_SENSOR_PESO_B" gate="A" pin="4"/>
 <wire x1="-43.18" y1="142.24" x2="-35.56" y2="142.24" width="0.1524" layer="91"/>
 <label x="-55.88" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="4"/>
+<pinref part="CONECTOR_B" gate="A" pin="4"/>
 <wire x1="-78.74" y1="119.38" x2="-86.36" y2="119.38" width="0.1524" layer="91"/>
 <label x="-99.06" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCA_YLW" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="5"/>
+<pinref part="LCA_SENSOR_PESO_B" gate="A" pin="5"/>
 <wire x1="-43.18" y1="139.7" x2="-35.56" y2="139.7" width="0.1524" layer="91"/>
 <label x="-55.88" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="2"/>
+<pinref part="CONECTOR_B" gate="A" pin="2"/>
 <wire x1="-78.74" y1="116.84" x2="-86.36" y2="116.84" width="0.1524" layer="91"/>
 <label x="-99.06" y="116.84" size="1.778" layer="95"/>
 </segment>
@@ -5417,55 +5413,55 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="SALIDA_D6" class="0">
 <segment>
 <pinref part="T1" gate="G1" pin="C"/>
-<wire x1="58.42" y1="111.76" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
-<label x="66.04" y="116.84" size="1.778" layer="95" rot="R180"/>
+<wire x1="60.96" y1="106.68" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="109.22" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<label x="68.58" y="111.76" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="D6" class="0">
 <segment>
 <pinref part="T1" gate="G1" pin="B"/>
-<wire x1="50.8" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<label x="45.72" y="106.68" size="1.778" layer="95"/>
+<wire x1="53.34" y1="101.6" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
+<label x="48.26" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="6/PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="6/PWM"/>
 <wire x1="-10.16" y1="81.28" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
 <label x="-2.54" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIN_B" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="BLUE_CATHODE"/>
-<wire x1="50.8" y1="147.32" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
-<label x="50.8" y="152.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="LED_RGB" gate="G$1" pin="BLUE_CATHODE"/>
+<wire x1="53.34" y1="142.24" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
+<label x="53.34" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="22/A8/T/PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="22/A8/T/PWM"/>
 <wire x1="-10.16" y1="121.92" x2="-5.08" y2="121.92" width="0.1524" layer="91"/>
 <label x="-2.54" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIN_G" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="GREEN_CATHODE"/>
-<wire x1="55.88" y1="147.32" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
-<label x="55.88" y="152.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="LED_RGB" gate="G$1" pin="GREEN_CATHODE"/>
+<wire x1="58.42" y1="142.24" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
+<label x="58.42" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="21/A7/PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="21/A7/PWM"/>
 <wire x1="-10.16" y1="119.38" x2="-5.08" y2="119.38" width="0.1524" layer="91"/>
 <label x="-2.54" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIN_R" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="RED_CATHODE"/>
-<wire x1="60.96" y1="147.32" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
-<label x="60.96" y="152.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="LED_RGB" gate="G$1" pin="RED_CATHODE"/>
+<wire x1="63.5" y1="142.24" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
+<label x="63.5" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="ECO" gate="G$1" pin="20/A6/PWM"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="20/A6/PWM"/>
 <wire x1="-10.16" y1="116.84" x2="-5.08" y2="116.84" width="0.1524" layer="91"/>
 <label x="-2.54" y="116.84" size="1.778" layer="95"/>
 </segment>
