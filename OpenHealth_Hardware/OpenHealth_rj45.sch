@@ -437,6 +437,39 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="DGND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -454,19 +487,21 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="ALTURA" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH" value="RJ45"/>
 <part name="CONECTOR_A" library="pinhead" deviceset="PINHD-2X5" device=""/>
 <part name="CONECTOR_B" library="pinhead" deviceset="PINHD-2X5" device=""/>
+<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="TEMPERATURA" gate="JP1" x="-2.54" y="76.2" rot="R90"/>
-<instance part="ELECTROCARDIOGRAMA" gate="JP1" x="96.52" y="76.2" rot="R90"/>
-<instance part="PESO" gate="JP1" x="30.48" y="76.2" rot="R90"/>
-<instance part="PRESION_SANGUINEA" gate="JP1" x="129.54" y="76.2" rot="R90"/>
-<instance part="ALTURA" gate="JP1" x="63.5" y="76.2" rot="R90"/>
-<instance part="CONECTOR_A" gate="A" x="2.54" y="48.26" rot="R180"/>
-<instance part="CONECTOR_B" gate="A" x="68.58" y="48.26" rot="R180"/>
+<instance part="TEMPERATURA" gate="JP1" x="-5.08" y="91.44" rot="R90"/>
+<instance part="ELECTROCARDIOGRAMA" gate="JP1" x="93.98" y="91.44" rot="R90"/>
+<instance part="PESO" gate="JP1" x="27.94" y="91.44" rot="R90"/>
+<instance part="PRESION_SANGUINEA" gate="JP1" x="127" y="91.44" rot="R90"/>
+<instance part="ALTURA" gate="JP1" x="60.96" y="91.44" rot="R90"/>
+<instance part="CONECTOR_A" gate="A" x="2.54" y="50.8" rot="R180"/>
+<instance part="CONECTOR_B" gate="A" x="58.42" y="50.8" rot="R180"/>
+<instance part="GND1" gate="1" x="71.12" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -474,140 +509,291 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <net name="RL" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="2"/>
-<wire x1="-10.16" y1="43.18" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
-<label x="-15.24" y="43.18" size="1.778" layer="95"/>
+<wire x1="-10.16" y1="45.72" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
+<label x="-15.24" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ELECTROCARDIOGRAMA" gate="JP1" pin="8"/>
+<wire x1="104.14" y1="83.82" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
+<label x="104.14" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LA" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="4"/>
-<wire x1="-10.16" y1="45.72" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
-<label x="-15.24" y="45.72" size="1.778" layer="95"/>
+<wire x1="-10.16" y1="48.26" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
+<label x="-15.24" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ELECTROCARDIOGRAMA" gate="JP1" pin="7"/>
+<wire x1="101.6" y1="83.82" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
+<label x="101.6" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RA" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="6"/>
-<wire x1="-10.16" y1="48.26" x2="-2.54" y2="48.26" width="0.1524" layer="91"/>
-<label x="-15.24" y="48.26" size="1.778" layer="95"/>
+<wire x1="-10.16" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
+<label x="-15.24" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ELECTROCARDIOGRAMA" gate="JP1" pin="5"/>
+<wire x1="96.52" y1="83.82" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<label x="96.52" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D11" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="8"/>
-<wire x1="-10.16" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
-<label x="-15.24" y="50.8" size="1.778" layer="95"/>
+<wire x1="-10.16" y1="53.34" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
+<label x="-15.24" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ALTURA" gate="JP1" pin="7"/>
+<wire x1="68.58" y1="83.82" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
+<label x="68.58" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D12" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="10"/>
-<wire x1="-10.16" y1="53.34" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
-<label x="-15.24" y="53.34" size="1.778" layer="95"/>
+<wire x1="-10.16" y1="55.88" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
+<label x="-15.24" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ALTURA" gate="JP1" pin="8"/>
+<wire x1="71.12" y1="76.2" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
+<label x="71.12" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="9"/>
-<wire x1="12.7" y1="53.34" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
-<label x="12.7" y="53.34" size="1.778" layer="95"/>
+<wire x1="12.7" y1="55.88" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
+<label x="12.7" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="1"/>
-<wire x1="78.74" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<label x="78.74" y="43.18" size="1.778" layer="95"/>
+<wire x1="71.12" y1="45.72" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
+<label x="68.58" y="45.72" size="1.778" layer="95"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="71.12" y1="45.72" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="3"/>
-<wire x1="78.74" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
-<label x="78.74" y="45.72" size="1.778" layer="95"/>
+<wire x1="68.58" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<label x="68.58" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="9"/>
-<wire x1="78.74" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
-<label x="78.74" y="53.34" size="1.778" layer="95"/>
+<wire x1="68.58" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
+<label x="68.58" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMPERATURA" gate="JP1" pin="6"/>
+<wire x1="0" y1="83.82" x2="0" y2="76.2" width="0.1524" layer="91"/>
+<label x="0" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="PESO" gate="JP1" pin="6"/>
+<wire x1="33.02" y1="83.82" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
+<label x="33.02" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="ALTURA" gate="JP1" pin="6"/>
+<wire x1="66.04" y1="83.82" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
+<label x="66.04" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="ELECTROCARDIOGRAMA" gate="JP1" pin="6"/>
+<wire x1="99.06" y1="83.82" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<label x="99.06" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="PRESION_SANGUINEA" gate="JP1" pin="6"/>
+<wire x1="132.08" y1="83.82" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<label x="132.08" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="BPM_RX" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="7"/>
-<wire x1="12.7" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
-<label x="12.7" y="50.8" size="1.778" layer="95"/>
+<wire x1="12.7" y1="53.34" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
+<label x="12.7" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PRESION_SANGUINEA" gate="JP1" pin="5"/>
+<wire x1="129.54" y1="78.74" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
+<label x="129.54" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="BPM_TX" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="5"/>
-<wire x1="12.7" y1="48.26" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
-<label x="12.7" y="48.26" size="1.778" layer="95"/>
+<wire x1="12.7" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<label x="12.7" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PRESION_SANGUINEA" gate="JP1" pin="7"/>
+<wire x1="134.62" y1="78.74" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
+<label x="134.62" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SALIDA_D6" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="3"/>
-<wire x1="12.7" y1="45.72" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
-<label x="12.7" y="45.72" size="1.778" layer="95"/>
+<wire x1="12.7" y1="48.26" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
+<label x="12.7" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PRESION_SANGUINEA" gate="JP1" pin="8"/>
+<wire x1="137.16" y1="76.2" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
+<label x="137.16" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
 <pinref part="CONECTOR_A" gate="A" pin="1"/>
-<wire x1="12.7" y1="43.18" x2="5.08" y2="43.18" width="0.1524" layer="91"/>
-<label x="12.7" y="43.18" size="1.778" layer="95"/>
+<wire x1="12.7" y1="45.72" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
+<label x="12.7" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMPERATURA" gate="JP1" pin="8"/>
+<wire x1="5.08" y1="83.82" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
+<label x="5.08" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCA_YLW" class="0">
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="2"/>
-<wire x1="55.88" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
-<label x="43.18" y="43.18" size="1.778" layer="95"/>
+<wire x1="45.72" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+<label x="33.02" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PESO" gate="JP1" pin="1"/>
+<wire x1="20.32" y1="78.74" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
+<label x="20.32" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCA_GRN" class="0">
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="4"/>
-<wire x1="55.88" y1="45.72" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
-<label x="43.18" y="45.72" size="1.778" layer="95"/>
+<wire x1="45.72" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
+<label x="33.02" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PESO" gate="JP1" pin="3"/>
+<wire x1="25.4" y1="83.82" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
+<label x="25.4" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCA_WHT" class="0">
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="6"/>
-<wire x1="55.88" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
-<label x="43.18" y="48.26" size="1.778" layer="95"/>
+<wire x1="45.72" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<label x="33.02" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PESO" gate="JP1" pin="5"/>
+<wire x1="30.48" y1="83.82" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<label x="30.48" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCA_BLK" class="0">
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="8"/>
-<wire x1="55.88" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
-<label x="43.18" y="50.8" size="1.778" layer="95"/>
+<wire x1="45.72" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<label x="33.02" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PESO" gate="JP1" pin="7"/>
+<wire x1="35.56" y1="83.82" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
+<label x="35.56" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LCA_RED" class="0">
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="10"/>
-<wire x1="55.88" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
-<label x="43.18" y="53.34" size="1.778" layer="95"/>
+<wire x1="45.72" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
+<label x="33.02" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PESO" gate="JP1" pin="8"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="38.1" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="7"/>
-<wire x1="78.74" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
-<label x="78.74" y="50.8" size="1.778" layer="95"/>
+<wire x1="68.58" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
+<label x="68.58" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMPERATURA" gate="JP1" pin="2"/>
+<wire x1="-10.16" y1="76.2" x2="-10.16" y2="83.82" width="0.1524" layer="91"/>
+<label x="-10.16" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="PESO" gate="JP1" pin="2"/>
+<wire x1="22.86" y1="76.2" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
+<label x="22.86" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="ALTURA" gate="JP1" pin="2"/>
+<wire x1="55.88" y1="76.2" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
+<label x="55.88" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="ELECTROCARDIOGRAMA" gate="JP1" pin="2"/>
+<wire x1="88.9" y1="76.2" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
+<label x="88.9" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="PRESION_SANGUINEA" gate="JP1" pin="2"/>
+<wire x1="121.92" y1="76.2" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
+<label x="121.92" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="CONECTOR_B" gate="A" pin="5"/>
-<wire x1="78.74" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
-<label x="78.74" y="48.26" size="1.778" layer="95"/>
+<wire x1="68.58" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
+<label x="68.58" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMPERATURA" gate="JP1" pin="4"/>
+<wire x1="-5.08" y1="76.2" x2="-5.08" y2="83.82" width="0.1524" layer="91"/>
+<label x="-5.08" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="PESO" gate="JP1" pin="4"/>
+<wire x1="27.94" y1="83.82" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<label x="27.94" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="ALTURA" gate="JP1" pin="4"/>
+<wire x1="60.96" y1="76.2" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
+<label x="60.96" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="ELECTROCARDIOGRAMA" gate="JP1" pin="4"/>
+<wire x1="93.98" y1="76.2" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
+<label x="93.98" y="66.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="PRESION_SANGUINEA" gate="JP1" pin="4"/>
+<wire x1="127" y1="76.2" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<label x="127" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,0.0578469,49.3988,CONECTOR_A,,,,,"/>
+<approved hash="113,1,55.9378,49.3988,CONECTOR_B,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

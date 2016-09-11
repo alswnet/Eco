@@ -1,22 +1,29 @@
 * Conexiones Tennsy 3.2 *
-LCD I2C 16x2 -                  A4, A5
-Sensor Temperatura -            A0
-Monitor de Presion Sanginea-	9,10, 6
-Sensor de Peso -                A1, A2
-Ultrasonico -                   11, 12
-Trasmisor Bluetooth -           7, 8
-Sensor de Corazon -             2, 3, A3
-Botones Interface -             4, 5
-Led RGB-                        20, 21, 22
+-LCD I2C 16x2 -                  A4, A5
+-Sensor Temperatura -            A0
+-Monitor de Presion Sanginea -	 9, 10, 6
+-Sensor de Peso -                A1, A2
+-Ultrasonico -                   11, 12
+-Trasmisor Bluetooth -           7, 8
+-Sensor de Corazon -             2, 3, A3
+-Botones Interface -             4, 5
+-Led RGB-                        20, 21, 22
 
 
 * Abreviaturas *
-LCA = Load Cell Amp
+-LCA = Load Cell Amp
+-BPM = Blood Presure Monitor
 
+* Funciones *
+-Temperatura         - Sensor de temperatura
+-Peso                - Load Cell Amp
+-Presion Sanguinea   - Blood Presure Monitor
+-Altura              - Sensor Ultrasonico
+-ElectroCardiograma  - AD8232
 
-* Sensores *
-Temperatura
-Peso
-Presion Sanguinea
-Altura
-ElectroCardiograma
+Mejoras
+-Permutacion para la obtencion de las 3 derivadas positivas del electrocardiograma.
+-Colocar un arreglo para hacer posibles las permutaciones como:
+--NPN
+--Mux
+--
