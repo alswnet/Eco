@@ -4960,6 +4960,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="PRESION_SANGUIENA" library="transistor" deviceset="2N3904" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="R3" library="resistor" deviceset="R-US_" device="0204/7" value="330"/>
+<part name="R4" library="resistor" deviceset="R-US_" device="0204/7" value="330"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -4993,6 +4996,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="PRESION_SANGUIENA" gate="G1" x="58.42" y="101.6"/>
 <instance part="GND5" gate="1" x="60.96" y="88.9"/>
 <instance part="JP1" gate="G$1" x="38.1" y="68.58"/>
+<instance part="R3" gate="G$1" x="50.8" y="152.4" rot="R90"/>
+<instance part="R4" gate="G$1" x="58.42" y="152.4" rot="R90"/>
+<instance part="R5" gate="G$1" x="66.04" y="152.4" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5478,38 +5484,61 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="PIN_B" class="0">
 <segment>
-<pinref part="LED_RGB" gate="G$1" pin="BLUE_CATHODE"/>
-<wire x1="53.34" y1="142.24" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
-<label x="53.34" y="147.32" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="OPENHEALTH" gate="G$1" pin="22/A8/T/PWM"/>
 <wire x1="-10.16" y1="121.92" x2="-5.08" y2="121.92" width="0.1524" layer="91"/>
 <label x="-2.54" y="121.92" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="157.48" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
+<label x="50.8" y="160.02" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="PIN_G" class="0">
-<segment>
-<pinref part="LED_RGB" gate="G$1" pin="GREEN_CATHODE"/>
-<wire x1="58.42" y1="142.24" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
-<label x="58.42" y="147.32" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="OPENHEALTH" gate="G$1" pin="21/A7/PWM"/>
 <wire x1="-10.16" y1="119.38" x2="-5.08" y2="119.38" width="0.1524" layer="91"/>
 <label x="-2.54" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="157.48" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
+<label x="58.42" y="160.02" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="PIN_R" class="0">
-<segment>
-<pinref part="LED_RGB" gate="G$1" pin="RED_CATHODE"/>
-<wire x1="63.5" y1="142.24" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
-<label x="63.5" y="147.32" size="1.778" layer="95" rot="R90"/>
-</segment>
 <segment>
 <pinref part="OPENHEALTH" gate="G$1" pin="20/A6/PWM"/>
 <wire x1="-10.16" y1="116.84" x2="-5.08" y2="116.84" width="0.1524" layer="91"/>
 <label x="-2.54" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="157.48" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
+<label x="66.04" y="160.02" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="147.32" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="LED_RGB" gate="G$1" pin="BLUE_CATHODE"/>
+<wire x1="50.8" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="147.32" x2="66.04" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="LED_RGB" gate="G$1" pin="RED_CATHODE"/>
+<wire x1="66.04" y1="142.24" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="LED_RGB" gate="G$1" pin="GREEN_CATHODE"/>
+<wire x1="58.42" y1="147.32" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
