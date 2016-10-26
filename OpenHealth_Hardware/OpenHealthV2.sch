@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1128,80 +1128,6 @@
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="con-wago-500">
-<description>&lt;b&gt;Wago Screw Clamps&lt;/b&gt;&lt;p&gt;
-Grid 5.00 mm&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="W237-102">
-<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
-<wire x1="-3.491" y1="-2.286" x2="-1.484" y2="-0.279" width="0.254" layer="51"/>
-<wire x1="1.488" y1="-2.261" x2="3.469" y2="-0.254" width="0.254" layer="51"/>
-<wire x1="-4.989" y1="-5.461" x2="4.993" y2="-5.461" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.734" x2="4.993" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.734" x2="-4.989" y2="3.734" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-5.461" x2="-4.989" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-3.073" x2="-3.389" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-3.389" y1="-3.073" x2="-1.611" y2="-3.073" width="0.1524" layer="51"/>
-<wire x1="-1.611" y1="-3.073" x2="1.615" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="3.393" y1="-3.073" x2="4.993" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-3.073" x2="-4.989" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="-3.073" x2="4.993" y2="-5.461" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="3.531" x2="4.993" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="3.531" x2="-4.989" y2="3.734" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.531" x2="4.993" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="1.615" y1="-3.073" x2="3.393" y2="-3.073" width="0.1524" layer="51"/>
-<circle x="-2.5" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="-2.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<circle x="2.5038" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="2.5038" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
-<text x="-5.04" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.8462" y="-5.0038" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.532" y="0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.421" y="0.635" size="1.27" layer="21" ratio="10">2</text>
-</package>
-</packages>
-<symbols>
-<symbol name="KL">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="KL+V">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
-<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="W237-102" prefix="X" uservalue="yes">
-<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="KL+V" x="0" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="W237-102">
-<connects>
-<connect gate="-1" pin="KL" pad="1"/>
-<connect gate="-2" pin="KL" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="237-102" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="70K9898" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -4927,6 +4853,68 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Bateria">
+<packages>
+<package name="LIPOWER">
+<wire x1="0" y1="0" x2="0" y2="25.4" width="0.127" layer="21"/>
+<wire x1="0" y1="25.4" x2="22.86" y2="25.4" width="0.127" layer="21"/>
+<wire x1="22.86" y1="25.4" x2="22.86" y2="0" width="0.127" layer="21"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="PIN_PS" x="7.62" y="24.13" drill="0.9" diameter="1.9304"/>
+<pad name="PIN_VCC" x="10.16" y="24.13" drill="0.9" diameter="1.9304"/>
+<pad name="PIN_EN" x="15.24" y="24.13" drill="0.9" diameter="1.9304"/>
+<pad name="PIN_GND1" x="12.7" y="24.13" drill="0.9" diameter="1.9304"/>
+<pad name="PIN_GND2" x="12.7" y="1.27" drill="0.9" diameter="1.9304"/>
+<pad name="PIN_5V" x="10.16" y="1.27" drill="0.9" diameter="1.9304"/>
+<hole x="20.32" y="22.86" drill="2.8"/>
+<hole x="20.32" y="2.54" drill="2.8"/>
+<hole x="2.54" y="2.54" drill="2.8"/>
+<hole x="2.54" y="22.86" drill="2.8"/>
+<text x="7.62" y="19.05" size="1.27" layer="21" rot="R90">PS</text>
+<text x="10.16" y="19.05" size="1.27" layer="21" rot="R90">VCC</text>
+<text x="12.7" y="19.05" size="1.27" layer="21" rot="R90">GND</text>
+<text x="15.24" y="19.05" size="1.27" layer="21" rot="R90">EN</text>
+<text x="10.16" y="2.54" size="1.27" layer="21" rot="R90">+5V</text>
+<text x="12.7" y="2.54" size="1.27" layer="21" rot="R90">GND</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LIPOWER">
+<wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="0" width="0.254" layer="94"/>
+<pin name="PS" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="EN" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="VCC" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="GND" x="20.32" y="5.08" length="middle" rot="R180"/>
+<text x="0" y="25.4" size="1.778" layer="95">&gt;NAME</text>
+<pin name="+5V" x="-5.08" y="5.08" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LIPOWER">
+<description>LIBRERIA PARA EL LIPOWER CHARGER DE SPARKFUN</description>
+<gates>
+<gate name="G$1" symbol="LIPOWER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LIPOWER">
+<connects>
+<connect gate="G$1" pin="+5V" pad="PIN_5V"/>
+<connect gate="G$1" pin="EN" pad="PIN_EN"/>
+<connect gate="G$1" pin="GND" pad="PIN_GND1 PIN_GND2" route="any"/>
+<connect gate="G$1" pin="PS" pad="PIN_PS"/>
+<connect gate="G$1" pin="VCC" pad="PIN_VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4938,8 +4926,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </classes>
 <parts>
 <part name="OPENHEALTH" library="Teensy_3_and_LC_Series_Boards_v1.1" deviceset="TEENSY_3.1_OUTER_ROW" device=""/>
-<part name="CONECTOR_VOLTAJE" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="X1" library="con-wago-500" deviceset="W237-102" device=""/>
 <part name="CONECTOR_A" library="pinhead" deviceset="PINHD-2X5" device=""/>
 <part name="CONECTOR_B" library="pinhead" deviceset="PINHD-2X5" device=""/>
 <part name="AD8232_A" library="pinhead" deviceset="PINHD-1X6" device=""/>
@@ -4963,6 +4949,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R3" library="resistor" deviceset="R-US_" device="0204/7" value="330"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="0204/7" value="330"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="330"/>
+<part name="U$5" library="Bateria" deviceset="LIPOWER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4973,9 +4960,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </plain>
 <instances>
 <instance part="OPENHEALTH" gate="G$1" x="-33.02" y="93.98" rot="R180"/>
-<instance part="CONECTOR_VOLTAJE" gate="A" x="-93.98" y="76.2" rot="R180"/>
-<instance part="X1" gate="-1" x="-81.28" y="58.42" rot="R90"/>
-<instance part="X1" gate="-2" x="-76.2" y="58.42" rot="R90"/>
 <instance part="CONECTOR_A" gate="A" x="-78.74" y="101.6" rot="R180"/>
 <instance part="CONECTOR_B" gate="A" x="-78.74" y="121.92" rot="R180"/>
 <instance part="AD8232_A" gate="A" x="38.1" y="104.14"/>
@@ -4999,33 +4983,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R3" gate="G$1" x="50.8" y="152.4" rot="R90"/>
 <instance part="R4" gate="G$1" x="58.42" y="152.4" rot="R90"/>
 <instance part="R5" gate="G$1" x="66.04" y="152.4" rot="R90"/>
+<instance part="U$5" gate="G$1" x="-99.06" y="60.96"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="X1" gate="-1" pin="KL"/>
-<wire x1="-81.28" y1="71.12" x2="-81.28" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="CONECTOR_VOLTAJE" gate="A" pin="1"/>
-<wire x1="-91.44" y1="71.12" x2="-81.28" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
-<segment>
-<pinref part="CONECTOR_VOLTAJE" gate="A" pin="2"/>
-<wire x1="-91.44" y1="73.66" x2="-76.2" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="KL"/>
-<wire x1="-76.2" y1="73.66" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="73.66" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="63.5" x2="-76.2" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-76.2" y="73.66"/>
-<pinref part="OPENHEALTH" gate="G$1" pin="GND"/>
-<label x="-63.5" y="71.12" size="1.778" layer="95"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="-68.58" y1="60.96" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-68.58" y="73.66"/>
-</segment>
 <segment>
 <pinref part="AD8232_A" gate="A" pin="1"/>
 <wire x1="35.56" y1="111.76" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
@@ -5092,16 +5055,23 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-76.2" y1="121.92" x2="-68.58" y2="121.92" width="0.1524" layer="91"/>
 <label x="-66.04" y="121.92" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<wire x1="-78.74" y1="66.04" x2="-68.58" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="66.04" x2="-68.58" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="GND"/>
+<wire x1="-68.58" y1="73.66" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="-68.58" y1="66.04" x2="-68.58" y2="60.96" width="0.1524" layer="91"/>
+<junction x="-68.58" y="66.04"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
+<label x="17.78" y="68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VIN" class="0">
-<segment>
-<pinref part="CONECTOR_VOLTAJE" gate="A" pin="3"/>
-<wire x1="-91.44" y1="76.2" x2="-73.66" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="76.2" x2="-73.66" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="OPENHEALTH" gate="G$1" pin="VIN"/>
-<wire x1="-73.66" y1="66.04" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
-<label x="-63.5" y="63.5" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="LCD_I2C" gate="A" pin="2"/>
 <wire x1="35.56" y1="86.36" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
@@ -5539,6 +5509,26 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="LED_RGB" gate="G$1" pin="GREEN_CATHODE"/>
 <wire x1="58.42" y1="147.32" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<wire x1="-76.2" y1="71.12" x2="-66.04" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="71.12" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="OPENHEALTH" gate="G$1" pin="VIN"/>
+<wire x1="-66.04" y1="66.04" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PIN_EN" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="EN"/>
+<wire x1="-78.74" y1="76.2" x2="-68.58" y2="76.2" width="0.1524" layer="91"/>
+<label x="-68.58" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<label x="17.78" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
