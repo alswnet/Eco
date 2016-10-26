@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -152,52 +152,20 @@
 </layers>
 <board>
 <plain>
-<wire x1="-57.15" y1="138.43" x2="-21.59" y2="138.43" width="0.254" layer="20"/>
-<wire x1="-21.59" y1="138.43" x2="-21.59" y2="110.49" width="0.254" layer="20"/>
-<wire x1="-57.15" y1="110.49" x2="-57.15" y2="138.43" width="0.254" layer="20"/>
-<wire x1="-20.32" y1="110.49" x2="2.54" y2="110.49" width="0.254" layer="20"/>
-<wire x1="2.54" y1="110.49" x2="2.54" y2="140.97" width="0.254" layer="20"/>
-<wire x1="-20.32" y1="140.97" x2="-20.32" y2="110.49" width="0.254" layer="20"/>
-<wire x1="-20.32" y1="140.97" x2="2.54" y2="140.97" width="0.254" layer="20"/>
-<wire x1="54.61" y1="109.22" x2="36.83" y2="109.22" width="0.254" layer="20"/>
-<wire x1="36.83" y1="109.22" x2="36.83" y2="153.67" width="0.254" layer="20"/>
-<wire x1="54.61" y1="153.67" x2="54.61" y2="109.22" width="0.254" layer="20"/>
-<wire x1="54.61" y1="153.67" x2="36.83" y2="153.67" width="0.254" layer="20"/>
-<wire x1="29.21" y1="91.44" x2="29.21" y2="72.39" width="0.254" layer="20"/>
-<wire x1="29.21" y1="72.39" x2="-6.35" y2="72.39" width="0.254" layer="20"/>
-<wire x1="-6.35" y1="91.44" x2="29.21" y2="91.44" width="0.254" layer="20"/>
-<wire x1="-6.35" y1="91.44" x2="-6.35" y2="72.39" width="0.254" layer="20"/>
-<wire x1="-44.45" y1="71.12" x2="-44.45" y2="107.95" width="0.254" layer="20"/>
-<wire x1="-44.45" y1="107.95" x2="35.56" y2="107.95" width="0.254" layer="20"/>
-<wire x1="35.56" y1="71.12" x2="-44.45" y2="71.12" width="0.254" layer="20"/>
-<wire x1="35.56" y1="71.12" x2="35.56" y2="107.95" width="0.254" layer="20"/>
-<wire x1="-57.15" y1="110.49" x2="-21.59" y2="110.49" width="0.254" layer="20"/>
 <hole x="-17.78" y="138.43" drill="3.2"/>
 <hole x="0" y="113.03" drill="3.2"/>
 <hole x="-17.78" y="113.03" drill="3.2"/>
 <hole x="0" y="138.43" drill="3.2"/>
-<wire x1="-68.58" y1="20.32" x2="-68.58" y2="109.22" width="0.254" layer="20"/>
-<wire x1="59.69" y1="20.32" x2="59.69" y2="109.22" width="0.254" layer="20"/>
 <hole x="-41.91" y="105.41" drill="3.999990625"/>
 <hole x="-41.91" y="73.66" drill="3.999990625"/>
 <hole x="33.02" y="105.41" drill="3.999990625"/>
 <hole x="33.02" y="73.66" drill="3.999990625"/>
-<wire x1="-57.15" y1="21.59" x2="13.97" y2="21.59" width="0" layer="20"/>
-<wire x1="13.97" y1="68.58" x2="-57.15" y2="68.58" width="0.254" layer="20"/>
-<wire x1="-57.15" y1="68.58" x2="-57.15" y2="21.59" width="0.254" layer="20"/>
-<wire x1="13.97" y1="68.58" x2="13.97" y2="21.59" width="0.254" layer="20"/>
 <hole x="-66.04" y="22.86" drill="3.2"/>
 <hole x="-66.04" y="151.13" drill="3.2"/>
 <hole x="57.15" y="151.13" drill="3.2"/>
 <hole x="57.15" y="111.76" drill="3.2"/>
 <hole x="57.15" y="22.86" drill="3.2"/>
 <hole x="-66.04" y="111.76" drill="3.2"/>
-<wire x1="-68.58" y1="109.22" x2="-68.58" y2="153.67" width="0.254" layer="20"/>
-<wire x1="59.69" y1="109.22" x2="59.69" y2="153.67" width="0.254" layer="20"/>
-<wire x1="-68.58" y1="153.67" x2="36.83" y2="153.67" width="0.254" layer="20"/>
-<wire x1="54.61" y1="153.67" x2="59.69" y2="153.67" width="0.254" layer="20"/>
-<wire x1="-68.58" y1="109.22" x2="36.83" y2="109.22" width="0.254" layer="20"/>
-<wire x1="54.61" y1="109.22" x2="59.69" y2="109.22" width="0.254" layer="20"/>
 </plain>
 <libraries>
 <library name="pinhead">
@@ -1791,6 +1759,56 @@ type 0204, grid 7.5 mm</description>
 </package>
 </packages>
 </library>
+<library name="OpenHealth">
+<packages>
+<package name="BLUETOOTH_HC05">
+<wire x1="0" y1="0" x2="0" y2="16.51" width="0.127" layer="21"/>
+<wire x1="0" y1="16.51" x2="44.45" y2="16.51" width="0.127" layer="21"/>
+<wire x1="44.45" y1="16.51" x2="44.45" y2="0" width="0.127" layer="21"/>
+<wire x1="44.45" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="PIN_RTS0" x="43.18" y="1.905" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_RX-I" x="43.18" y="4.445" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_TX-O" x="43.18" y="6.985" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_VCC" x="43.18" y="12.065" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_CTS-I" x="43.18" y="14.605" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_GND" x="43.18" y="9.525" drill="0.8" diameter="1.9304"/>
+<text x="35.56" y="8.89" size="1.27" layer="21">GND</text>
+<text x="35.56" y="13.97" size="1.27" layer="21">CTS-I</text>
+<text x="35.56" y="11.43" size="1.27" layer="21">VCC</text>
+<text x="35.56" y="6.35" size="1.27" layer="21">TX-O</text>
+<text x="35.56" y="3.81" size="1.27" layer="21">RX-I</text>
+<text x="35.56" y="1.27" size="1.27" layer="21">RTS-O</text>
+</package>
+<package name="AD8232">
+<wire x1="0" y1="0" x2="0" y2="27.94" width="0.127" layer="21"/>
+<wire x1="0" y1="27.94" x2="35.56" y2="27.94" width="0.127" layer="21"/>
+<wire x1="35.56" y1="27.94" x2="35.56" y2="0" width="0.127" layer="21"/>
+<wire x1="35.56" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="PIN_RL" x="1.27" y="15.24" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_LA" x="1.27" y="17.78" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_RA" x="1.27" y="20.32" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_GND" x="11.43" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_3.3V" x="13.97" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_OUTPUT" x="16.51" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_LO-" x="19.05" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_LO+" x="21.59" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_SDN" x="24.13" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<text x="2.54" y="20.32" size="1.27" layer="21">RA</text>
+<text x="2.54" y="17.78" size="1.27" layer="21">LA</text>
+<text x="2.54" y="15.24" size="1.27" layer="21">RL</text>
+<text x="11.43" y="3.81" size="1.27" layer="21" rot="R90">GND</text>
+<text x="13.97" y="3.81" size="1.27" layer="21" rot="R90">3.3V</text>
+<text x="16.51" y="3.81" size="1.27" layer="21" rot="R90">OUTPUT</text>
+<text x="19.05" y="3.81" size="1.27" layer="21" rot="R90">LO-</text>
+<text x="21.59" y="3.81" size="1.27" layer="21" rot="R90">LO+</text>
+<text x="24.13" y="3.81" size="1.27" layer="21" rot="R90">SND</text>
+<hole x="33.02" y="25.4" drill="3.81"/>
+<hole x="2.54" y="25.4" drill="3.81"/>
+<hole x="2.54" y="2.54" drill="3.81"/>
+<hole x="33.02" y="2.54" drill="3.81"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1982,7 +2000,6 @@ design rules under a new name.</description>
 <elements>
 <element name="AD8232_A" library="pinhead" package="1X06" value="" x="-39.37" y="111.76"/>
 <element name="AD8232_B" library="pinhead" package="1X03" value="" x="-55.88" y="125.73" rot="R270"/>
-<element name="BLUETOOTH" library="pinhead" package="1X06" value="" x="45.72" y="110.49" rot="R180"/>
 <element name="BOTON_1" library="switch-omron" package="B3F-10XX" value="" x="45.72" y="58.42">
 <attribute name="OC_NEWARK" value="36M3542" x="45.72" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="45.72" y="58.42" size="1.778" layer="27" display="off"/>
@@ -2016,6 +2033,8 @@ design rules under a new name.</description>
 <element name="R4" library="resistor" package="0204/7" value="330" x="8.89" y="127"/>
 <element name="R5" library="resistor" package="0204/7" value="330" x="8.89" y="129.54"/>
 <element name="U$5" library="Bateria" package="LIPOWER" value="LIPOWER" x="46.99" y="21.59" rot="R90"/>
+<element name="U$6" library="OpenHealth" package="BLUETOOTH_HC05" value="BLUETOOTH_HC05" x="36.83" y="152.4" rot="R270"/>
+<element name="U$7" library="OpenHealth" package="AD8232" value="AD8232" x="-66.04" y="-7.62"/>
 </elements>
 <signals>
 <signal name="AGND">
@@ -2027,7 +2046,6 @@ design rules under a new name.</description>
 <signal name="GND">
 <contactref element="AD8232_A" pad="1"/>
 <contactref element="LED_RGB" pad="2"/>
-<contactref element="BLUETOOTH" pad="4"/>
 <contactref element="LCD_I2C" pad="1"/>
 <contactref element="LCA_SENSOR_PESO_A" pad="5"/>
 <contactref element="PRESION_SANGUIENA" pad="3"/>
@@ -2039,87 +2057,50 @@ design rules under a new name.</description>
 <contactref element="BOTON_2" pad="3"/>
 <contactref element="CONECTOR_B" pad="7"/>
 <contactref element="CONECTOR_B" pad="5"/>
-<wire x1="-62.19" y1="86.32" x2="-63.5" y2="87.63" width="0.254" layer="16"/>
-<wire x1="-63.5" y1="87.63" x2="-63.5" y2="101.6" width="0.254" layer="16"/>
-<wire x1="-63.5" y1="101.6" x2="-62.23" y2="102.87" width="0.254" layer="16"/>
-<wire x1="-62.23" y1="102.87" x2="-60.96" y2="102.87" width="0.254" layer="16"/>
-<wire x1="31.1912" y1="56.1594" x2="31.1912" y2="55.1688" width="0.254" layer="16"/>
-<wire x1="31.1912" y1="55.1688" x2="31.75" y2="54.61" width="0.254" layer="16"/>
-<wire x1="31.75" y1="54.61" x2="41.91" y2="54.61" width="0.254" layer="16"/>
-<wire x1="42.4688" y1="56.1594" x2="42.4688" y2="55.1688" width="0.254" layer="16"/>
-<wire x1="42.4688" y1="55.1688" x2="41.91" y2="54.61" width="0.254" layer="16"/>
-<wire x1="42.4688" y1="56.1594" x2="42.4688" y2="55.3212" width="0.254" layer="16"/>
-<wire x1="42.4688" y1="55.3212" x2="43.18" y2="54.61" width="0.254" layer="16"/>
-<wire x1="43.18" y1="54.61" x2="48.26" y2="54.61" width="0.254" layer="16"/>
-<wire x1="48.9712" y1="56.1594" x2="48.9712" y2="55.3212" width="0.254" layer="16"/>
-<wire x1="48.9712" y1="55.3212" x2="48.26" y2="54.61" width="0.254" layer="16"/>
-<wire x1="24.6888" y1="56.1594" x2="24.6888" y2="55.3212" width="0.254" layer="16"/>
-<wire x1="24.6888" y1="55.3212" x2="25.4" y2="54.61" width="0.254" layer="16"/>
-<wire x1="25.4" y1="54.61" x2="30.6324" y2="54.61" width="0.254" layer="16"/>
-<wire x1="30.6324" y1="54.61" x2="31.1912" y2="55.1688" width="0.254" layer="16"/>
-<wire x1="-55.88" y1="102.87" x2="-55.88" y2="105.41" width="0.254" layer="16"/>
-<wire x1="-55.88" y1="105.41" x2="-54.61" y2="106.68" width="0.254" layer="16"/>
-<wire x1="-54.61" y1="106.68" x2="-48.26" y2="106.68" width="0.254" layer="16"/>
-<wire x1="-48.26" y1="106.68" x2="-45.72" y2="109.22" width="0.254" layer="16"/>
-<wire x1="-45.72" y1="109.22" x2="-45.72" y2="111.76" width="0.254" layer="16"/>
-<wire x1="-13.97" y1="139.7" x2="-13.97" y2="148.59" width="0.254" layer="16"/>
-<wire x1="-13.97" y1="148.59" x2="-12.7" y2="149.86" width="0.254" layer="16"/>
-<wire x1="-12.7" y1="149.86" x2="21.59" y2="149.86" width="0.254" layer="16"/>
-<wire x1="21.59" y1="149.86" x2="22.86" y2="148.59" width="0.254" layer="16"/>
-<wire x1="27.94" y1="85.09" x2="33.02" y2="90.17" width="0.254" layer="16"/>
-<wire x1="33.02" y1="90.17" x2="46.99" y2="90.17" width="0.254" layer="16"/>
 <contactref element="U$5" pad="PIN_GND1" route="any" routetag="G$1.GND"/>
 <contactref element="U$5" pad="PIN_GND2" route="any" routetag="G$1.GND"/>
 <contactref element="OPENHEALTH" pad="GND1"/>
 <contactref element="OPENHEALTH" pad="GND"/>
 <contactref element="JP1" pad="2"/>
-<wire x1="22.86" y1="148.59" x2="22.86" y2="147.32" width="0" layer="19" extent="16-16"/>
+<contactref element="U$6" pad="PIN_GND"/>
 <wire x1="30.48" y1="114.3" x2="22.86" y2="147.32" width="0" layer="19" extent="1-1"/>
-<wire x1="44.45" y1="110.49" x2="30.48" y2="114.3" width="0" layer="19" extent="1-1"/>
-<wire x1="40.64" y1="102.87" x2="44.45" y2="110.49" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="102.87" x2="30.48" y2="114.3" width="0" layer="19" extent="1-1"/>
+<wire x1="46.355" y1="109.22" x2="40.64" y2="102.87" width="0" layer="19" extent="1-1"/>
 <wire x1="46.99" y1="90.17" x2="40.64" y2="102.87" width="0" layer="19" extent="1-1"/>
 <wire x1="48.26" y1="83.185" x2="46.99" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="85.09" x2="46.99" y2="90.17" width="0" layer="19" extent="1-1"/>
 <wire x1="48.9712" y1="56.1594" x2="48.26" y2="83.185" width="0" layer="19" extent="1-1"/>
-<wire x1="54.61" y1="52.07" x2="48.26" y2="54.61" width="0" layer="19" extent="16-16"/>
+<wire x1="42.4688" y1="56.1594" x2="48.9712" y2="56.1594" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="52.07" x2="48.9712" y2="56.1594" width="0" layer="19" extent="1-1"/>
+<wire x1="31.1912" y1="56.1594" x2="42.4688" y2="56.1594" width="0" layer="19" extent="1-1"/>
+<wire x1="24.6888" y1="56.1594" x2="31.1912" y2="56.1594" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="34.29" x2="54.61" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.97" y1="139.7" x2="22.86" y2="147.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-45.72" y1="111.76" x2="-13.97" y2="139.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.88" y1="102.87" x2="-45.72" y2="111.76" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.42" y1="102.87" x2="-55.88" y2="102.87" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.96" y1="102.87" x2="-58.42" y2="102.87" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="34.29" x2="-62.19" y2="86.32" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VIN">
 <contactref element="LCD_I2C" pad="2"/>
-<contactref element="BLUETOOTH" pad="5"/>
 <contactref element="LCA_SENSOR_PESO_A" pad="1"/>
 <contactref element="LCA_SENSOR_PESO_A" pad="2"/>
 <contactref element="CONECTOR_B" pad="1"/>
-<wire x1="-50.8" y1="102.87" x2="-49.53" y2="102.87" width="0.254" layer="16"/>
-<wire x1="-49.53" y1="102.87" x2="-48.26" y2="101.6" width="0.254" layer="16"/>
-<wire x1="-48.26" y1="101.6" x2="-21.59" y2="101.6" width="0.254" layer="16"/>
-<wire x1="-21.59" y1="101.6" x2="-20.32" y2="102.87" width="0.254" layer="16"/>
-<wire x1="-20.32" y1="102.87" x2="-20.32" y2="115.57" width="0.254" layer="16"/>
-<wire x1="-20.32" y1="115.57" x2="-19.05" y2="116.84" width="0.254" layer="16"/>
-<wire x1="-19.05" y1="116.84" x2="2.54" y2="116.84" width="0.254" layer="16"/>
-<wire x1="2.54" y1="116.84" x2="5.08" y2="114.3" width="0.254" layer="16"/>
-<wire x1="27.94" y1="82.55" x2="24.13" y2="82.55" width="0.254" layer="16"/>
-<wire x1="27.94" y1="82.55" x2="41.91" y2="110.49" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="114.3" x2="41.91" y2="110.49" width="0" layer="19" extent="16-16"/>
-<wire x1="-3.81" y1="139.7" x2="2.54" y2="116.84" width="0" layer="19" extent="16-16"/>
+<contactref element="U$6" pad="PIN_VCC"/>
+<wire x1="27.94" y1="82.55" x2="48.895" y2="109.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.81" y1="139.7" x2="48.895" y2="109.22" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.35" y1="139.7" x2="-3.81" y2="139.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-50.8" y1="102.87" x2="-6.35" y2="139.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D11">
 <contactref element="OPENHEALTH" pad="11"/>
 <contactref element="CONECTOR_A" pad="8"/>
-<wire x1="43.18" y1="100.33" x2="43.18" y2="99.06" width="0.254" layer="16"/>
-<wire x1="43.18" y1="99.06" x2="41.91" y2="97.79" width="0.254" layer="16"/>
 <wire x1="43.18" y1="100.33" x2="30.48" y2="144.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D12">
 <contactref element="OPENHEALTH" pad="12"/>
 <contactref element="CONECTOR_A" pad="10"/>
-<wire x1="30.48" y1="147.32" x2="27.94" y2="144.78" width="0.254" layer="16"/>
-<wire x1="27.94" y1="144.78" x2="27.94" y2="104.14" width="0.254" layer="16"/>
-<wire x1="27.94" y1="104.14" x2="31.75" y2="100.33" width="0.254" layer="16"/>
-<wire x1="31.75" y1="100.33" x2="40.64" y2="100.33" width="0.254" layer="16"/>
+<wire x1="40.64" y1="100.33" x2="30.48" y2="147.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LO+">
 <contactref element="AD8232_A" pad="5"/>
@@ -2143,15 +2124,11 @@ design rules under a new name.</description>
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
 <contactref element="CONECTOR_B" pad="3"/>
-<wire x1="-43.18" y1="109.22" x2="-43.18" y2="111.76" width="0.254" layer="16"/>
-<wire x1="-53.34" y1="102.87" x2="-53.34" y2="104.14" width="0.254" layer="16"/>
-<wire x1="-53.34" y1="104.14" x2="-52.07" y2="105.41" width="0.254" layer="16"/>
-<wire x1="-52.07" y1="105.41" x2="-46.99" y2="105.41" width="0.254" layer="16"/>
-<wire x1="-46.99" y1="105.41" x2="-43.18" y2="109.22" width="0.254" layer="16"/>
-<wire x1="12.7" y1="119.38" x2="15.24" y2="119.38" width="0.254" layer="16"/>
 <wire x1="34.29" y1="121.92" x2="25.4" y2="147.32" width="0" layer="19" extent="1-1"/>
 <wire x1="15.24" y1="119.38" x2="34.29" y2="121.92" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="119.38" x2="15.24" y2="119.38" width="0" layer="19" extent="1-1"/>
 <wire x1="-43.18" y1="111.76" x2="12.7" y2="119.38" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.34" y1="102.87" x2="-43.18" y2="111.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RL">
 <contactref element="AD8232_B" pad="3"/>
@@ -2188,119 +2165,71 @@ design rules under a new name.</description>
 <contactref element="BOTON_2" pad="2"/>
 <contactref element="R2" pad="1"/>
 <contactref element="OPENHEALTH" pad="5"/>
-<wire x1="24.6888" y1="60.6806" x2="25.6794" y2="60.6806" width="0.254" layer="16"/>
-<wire x1="25.6794" y1="60.6806" x2="26.67" y2="59.69" width="0.254" layer="16"/>
-<wire x1="26.67" y1="59.69" x2="29.21" y2="59.69" width="0.254" layer="16"/>
-<wire x1="31.1912" y1="60.6806" x2="30.2006" y2="60.6806" width="0.254" layer="16"/>
-<wire x1="30.2006" y1="60.6806" x2="29.21" y2="59.69" width="0.254" layer="16"/>
-<wire x1="34.29" y1="129.54" x2="30.48" y2="129.54" width="0.254" layer="16"/>
+<wire x1="30.48" y1="129.54" x2="34.29" y2="129.54" width="0" layer="19" extent="1-1"/>
 <wire x1="31.1912" y1="60.6806" x2="30.48" y2="129.54" width="0" layer="19" extent="1-1"/>
+<wire x1="24.6888" y1="60.6806" x2="31.1912" y2="60.6806" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B1">
 <contactref element="BOTON_1" pad="1"/>
 <contactref element="BOTON_1" pad="2"/>
 <contactref element="R1" pad="1"/>
 <contactref element="OPENHEALTH" pad="4"/>
-<wire x1="42.4688" y1="60.6806" x2="43.4594" y2="60.6806" width="0.254" layer="16"/>
-<wire x1="43.4594" y1="60.6806" x2="44.45" y2="59.69" width="0.254" layer="16"/>
-<wire x1="48.9712" y1="60.6806" x2="47.9806" y2="60.6806" width="0.254" layer="16"/>
-<wire x1="47.9806" y1="60.6806" x2="46.99" y2="59.69" width="0.254" layer="16"/>
-<wire x1="46.99" y1="59.69" x2="44.45" y2="59.69" width="0.254" layer="16"/>
 <wire x1="5.08" y1="119.38" x2="30.48" y2="127" width="0" layer="19" extent="1-1"/>
 <wire x1="42.4688" y1="60.6806" x2="30.48" y2="127" width="0" layer="19" extent="1-1"/>
+<wire x1="48.9712" y1="60.6806" x2="42.4688" y2="60.6806" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BLUETOOTH_RX">
-<contactref element="BLUETOOTH" pad="2"/>
 <contactref element="OPENHEALTH" pad="8"/>
-<wire x1="49.53" y1="110.49" x2="30.48" y2="137.16" width="0" layer="19" extent="1-1"/>
+<contactref element="U$6" pad="PIN_RX-I"/>
+<wire x1="41.275" y1="109.22" x2="30.48" y2="137.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BLUETOOTH_TX">
-<contactref element="BLUETOOTH" pad="3"/>
 <contactref element="OPENHEALTH" pad="7"/>
-<wire x1="46.99" y1="110.49" x2="30.48" y2="134.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D_SDA">
 <contactref element="LCD_I2C" pad="3"/>
 <contactref element="OPENHEALTH" pad="18/A4"/>
-<wire x1="15.24" y1="134.62" x2="22.86" y2="127" width="0.254" layer="16"/>
-<wire x1="22.86" y1="127" x2="22.86" y2="81.28" width="0.254" layer="16"/>
-<wire x1="22.86" y1="81.28" x2="24.13" y2="80.01" width="0.254" layer="16"/>
-<wire x1="24.13" y1="80.01" x2="27.94" y2="80.01" width="0.254" layer="16"/>
+<wire x1="27.94" y1="80.01" x2="15.24" y2="134.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D_SCL">
 <contactref element="LCD_I2C" pad="4"/>
 <contactref element="OPENHEALTH" pad="19/A5"/>
-<wire x1="27.94" y1="77.47" x2="26.67" y2="76.2" width="0.254" layer="16"/>
-<wire x1="26.67" y1="76.2" x2="25.4" y2="76.2" width="0.254" layer="16"/>
-<wire x1="25.4" y1="76.2" x2="20.32" y2="81.28" width="0.254" layer="16"/>
-<wire x1="20.32" y1="81.28" x2="20.32" y2="86.36" width="0.254" layer="16"/>
-<wire x1="20.32" y1="86.36" x2="19.05" y2="87.63" width="0.254" layer="16"/>
-<wire x1="19.05" y1="87.63" x2="19.05" y2="128.27" width="0.254" layer="16"/>
-<wire x1="15.24" y1="132.08" x2="19.05" y2="128.27" width="0.254" layer="16"/>
+<wire x1="27.94" y1="77.47" x2="15.24" y2="132.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCA_DAT">
 <contactref element="LCA_SENSOR_PESO_A" pad="3"/>
 <contactref element="OPENHEALTH" pad="16/A2"/>
-<wire x1="-8.89" y1="139.7" x2="-8.89" y2="142.24" width="0.254" layer="16"/>
-<wire x1="-8.89" y1="142.24" x2="-7.62" y2="143.51" width="0.254" layer="16"/>
-<wire x1="-7.62" y1="143.51" x2="3.81" y2="143.51" width="0.254" layer="16"/>
-<wire x1="3.81" y1="143.51" x2="5.08" y2="142.24" width="0.254" layer="16"/>
-<wire x1="5.08" y1="142.24" x2="5.08" y2="140.97" width="0.254" layer="16"/>
-<wire x1="5.08" y1="140.97" x2="6.35" y2="139.7" width="0.254" layer="16"/>
-<wire x1="6.35" y1="139.7" x2="15.24" y2="139.7" width="0.254" layer="16"/>
+<wire x1="-8.89" y1="139.7" x2="15.24" y2="139.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCA_CLK">
 <contactref element="LCA_SENSOR_PESO_A" pad="4"/>
 <contactref element="OPENHEALTH" pad="15/A1"/>
-<wire x1="-11.43" y1="139.7" x2="-11.43" y2="143.51" width="0.254" layer="16"/>
-<wire x1="-11.43" y1="143.51" x2="-10.16" y2="144.78" width="0.254" layer="16"/>
-<wire x1="-10.16" y1="144.78" x2="5.08" y2="144.78" width="0.254" layer="16"/>
-<wire x1="5.08" y1="144.78" x2="7.62" y2="142.24" width="0.254" layer="16"/>
-<wire x1="7.62" y1="142.24" x2="15.24" y2="142.24" width="0.254" layer="16"/>
+<wire x1="-11.43" y1="139.7" x2="15.24" y2="142.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCA_RED">
 <contactref element="LCA_SENSOR_PESO_B" pad="1"/>
 <contactref element="CONECTOR_B" pad="10"/>
-<wire x1="-60.96" y1="100.33" x2="-60.96" y2="95.25" width="0.254" layer="16"/>
-<wire x1="-60.96" y1="95.25" x2="-59.69" y2="93.98" width="0.254" layer="16"/>
-<wire x1="-59.69" y1="93.98" x2="-5.08" y2="93.98" width="0.254" layer="16"/>
-<wire x1="-5.08" y1="93.98" x2="-3.81" y2="95.25" width="0.254" layer="16"/>
-<wire x1="-3.81" y1="95.25" x2="-3.81" y2="111.76" width="0.254" layer="16"/>
+<wire x1="-60.96" y1="100.33" x2="-3.81" y2="111.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCA_BLK">
 <contactref element="LCA_SENSOR_PESO_B" pad="2"/>
 <contactref element="CONECTOR_B" pad="8"/>
-<wire x1="-57.15" y1="95.25" x2="-7.62" y2="95.25" width="0.254" layer="16"/>
-<wire x1="-58.42" y1="100.33" x2="-58.42" y2="96.52" width="0.254" layer="16"/>
-<wire x1="-58.42" y1="96.52" x2="-57.15" y2="95.25" width="0.254" layer="16"/>
-<wire x1="-7.62" y1="95.25" x2="-6.35" y2="96.52" width="0.254" layer="16"/>
-<wire x1="-6.35" y1="96.52" x2="-6.35" y2="111.76" width="0.254" layer="16"/>
+<wire x1="-58.42" y1="100.33" x2="-6.35" y2="111.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCA_WHT">
 <contactref element="LCA_SENSOR_PESO_B" pad="3"/>
 <contactref element="CONECTOR_B" pad="6"/>
-<wire x1="-55.88" y1="100.33" x2="-55.88" y2="97.79" width="0.254" layer="16"/>
-<wire x1="-55.88" y1="97.79" x2="-54.61" y2="96.52" width="0.254" layer="16"/>
-<wire x1="-54.61" y1="96.52" x2="-10.16" y2="96.52" width="0.254" layer="16"/>
-<wire x1="-10.16" y1="96.52" x2="-8.89" y2="97.79" width="0.254" layer="16"/>
-<wire x1="-8.89" y1="97.79" x2="-8.89" y2="111.76" width="0.254" layer="16"/>
+<wire x1="-55.88" y1="100.33" x2="-8.89" y2="111.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCA_GRN">
 <contactref element="LCA_SENSOR_PESO_B" pad="4"/>
 <contactref element="CONECTOR_B" pad="4"/>
-<wire x1="-53.34" y1="100.33" x2="-53.34" y2="99.06" width="0.254" layer="16"/>
-<wire x1="-53.34" y1="99.06" x2="-52.07" y2="97.79" width="0.254" layer="16"/>
-<wire x1="-52.07" y1="97.79" x2="-12.7" y2="97.79" width="0.254" layer="16"/>
-<wire x1="-12.7" y1="97.79" x2="-11.43" y2="99.06" width="0.254" layer="16"/>
-<wire x1="-11.43" y1="99.06" x2="-11.43" y2="111.76" width="0.254" layer="16"/>
+<wire x1="-53.34" y1="100.33" x2="-11.43" y2="111.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCA_YLW">
 <contactref element="LCA_SENSOR_PESO_B" pad="5"/>
 <contactref element="CONECTOR_B" pad="2"/>
-<wire x1="-50.8" y1="100.33" x2="-49.53" y2="99.06" width="0.254" layer="16"/>
-<wire x1="-49.53" y1="99.06" x2="-15.24" y2="99.06" width="0.254" layer="16"/>
-<wire x1="-15.24" y1="99.06" x2="-13.97" y2="100.33" width="0.254" layer="16"/>
-<wire x1="-13.97" y1="100.33" x2="-13.97" y2="111.76" width="0.254" layer="16"/>
+<wire x1="-50.8" y1="100.33" x2="-13.97" y2="111.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SALIDA_D6">
 <contactref element="PRESION_SANGUIENA" pad="1"/>
@@ -2315,17 +2244,17 @@ design rules under a new name.</description>
 <signal name="PIN_B">
 <contactref element="OPENHEALTH" pad="22/A8"/>
 <contactref element="R3" pad="2"/>
-<wire x1="12.7" y1="124.46" x2="15.24" y2="124.46" width="0.254" layer="16"/>
+<wire x1="12.7" y1="124.46" x2="15.24" y2="124.46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PIN_G">
 <contactref element="OPENHEALTH" pad="21/A7"/>
 <contactref element="R4" pad="2"/>
-<wire x1="12.7" y1="127" x2="15.24" y2="127" width="0.254" layer="16"/>
+<wire x1="12.7" y1="127" x2="15.24" y2="127" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PIN_R">
 <contactref element="OPENHEALTH" pad="20/A6"/>
 <contactref element="R5" pad="2"/>
-<wire x1="12.7" y1="129.54" x2="15.24" y2="129.54" width="0.254" layer="16"/>
+<wire x1="12.7" y1="129.54" x2="15.24" y2="129.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R3" pad="1"/>
@@ -2344,6 +2273,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$5">
 <contactref element="OPENHEALTH" pad="VIN"/>
+<contactref element="U$5" pad="PIN_VCC"/>
+<wire x1="22.86" y1="31.75" x2="15.24" y2="114.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PIN_EN">
 <contactref element="U$5" pad="PIN_EN"/>

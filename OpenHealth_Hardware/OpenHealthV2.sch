@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4915,6 +4915,134 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="OpenHealth">
+<packages>
+<package name="BLUETOOTH_HC05">
+<wire x1="0" y1="0" x2="0" y2="16.51" width="0.127" layer="21"/>
+<wire x1="0" y1="16.51" x2="44.45" y2="16.51" width="0.127" layer="21"/>
+<wire x1="44.45" y1="16.51" x2="44.45" y2="0" width="0.127" layer="21"/>
+<wire x1="44.45" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="PIN_RTS0" x="43.18" y="1.905" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_RX-I" x="43.18" y="4.445" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_TX-O" x="43.18" y="6.985" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_VCC" x="43.18" y="12.065" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_CTS-I" x="43.18" y="14.605" drill="0.8" diameter="1.9304"/>
+<pad name="PIN_GND" x="43.18" y="9.525" drill="0.8" diameter="1.9304"/>
+<text x="35.56" y="8.89" size="1.27" layer="21">GND</text>
+<text x="35.56" y="13.97" size="1.27" layer="21">CTS-I</text>
+<text x="35.56" y="11.43" size="1.27" layer="21">VCC</text>
+<text x="35.56" y="6.35" size="1.27" layer="21">TX-O</text>
+<text x="35.56" y="3.81" size="1.27" layer="21">RX-I</text>
+<text x="35.56" y="1.27" size="1.27" layer="21">RTS-O</text>
+</package>
+<package name="AD8232">
+<wire x1="0" y1="0" x2="0" y2="27.94" width="0.127" layer="21"/>
+<wire x1="0" y1="27.94" x2="35.56" y2="27.94" width="0.127" layer="21"/>
+<wire x1="35.56" y1="27.94" x2="35.56" y2="0" width="0.127" layer="21"/>
+<wire x1="35.56" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="PIN_RL" x="1.27" y="15.24" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_LA" x="1.27" y="17.78" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_RA" x="1.27" y="20.32" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_GND" x="11.43" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_3.3V" x="13.97" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_OUTPUT" x="16.51" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_LO-" x="19.05" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_LO+" x="21.59" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<pad name="PIN_SDN" x="24.13" y="1.27" drill="0.8" diameter="1.9304" rot="R90"/>
+<text x="2.54" y="20.32" size="1.27" layer="21">RA</text>
+<text x="2.54" y="17.78" size="1.27" layer="21">LA</text>
+<text x="2.54" y="15.24" size="1.27" layer="21">RL</text>
+<text x="11.43" y="3.81" size="1.27" layer="21" rot="R90">GND</text>
+<text x="13.97" y="3.81" size="1.27" layer="21" rot="R90">3.3V</text>
+<text x="16.51" y="3.81" size="1.27" layer="21" rot="R90">OUTPUT</text>
+<text x="19.05" y="3.81" size="1.27" layer="21" rot="R90">LO-</text>
+<text x="21.59" y="3.81" size="1.27" layer="21" rot="R90">LO+</text>
+<text x="24.13" y="3.81" size="1.27" layer="21" rot="R90">SND</text>
+<hole x="33.02" y="25.4" drill="3.81"/>
+<hole x="2.54" y="25.4" drill="3.81"/>
+<hole x="2.54" y="2.54" drill="3.81"/>
+<hole x="33.02" y="2.54" drill="3.81"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BLUETOOTH_HC05">
+<wire x1="0" y1="0" x2="0" y2="30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="30.48" x2="15.24" y2="30.48" width="0.254" layer="94"/>
+<wire x1="15.24" y1="30.48" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="RTS" x="20.32" y="27.94" length="middle" rot="R180"/>
+<pin name="RX" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="TX" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="CTS" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="VCC" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="GND" x="20.32" y="2.54" length="middle" rot="R180"/>
+<text x="0" y="33.02" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="AD8232">
+<wire x1="0" y1="0" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="0" y1="35.56" x2="27.94" y2="35.56" width="0.254" layer="94"/>
+<wire x1="27.94" y1="35.56" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="RA" x="-5.08" y="30.48" length="middle"/>
+<pin name="LA" x="-5.08" y="25.4" length="middle"/>
+<pin name="RL" x="-5.08" y="20.32" length="middle"/>
+<pin name="SDN" x="33.02" y="30.48" length="middle" rot="R180"/>
+<pin name="LO+" x="33.02" y="25.4" length="middle" rot="R180"/>
+<pin name="LO-" x="33.02" y="20.32" length="middle" rot="R180"/>
+<pin name="OUTPUT" x="33.02" y="15.24" length="middle" rot="R180"/>
+<pin name="3.3V" x="33.02" y="10.16" length="middle" rot="R180"/>
+<pin name="GND" x="33.02" y="5.08" length="middle" rot="R180"/>
+<text x="0" y="38.1" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BLUETOOTH_HC05">
+<gates>
+<gate name="G$1" symbol="BLUETOOTH_HC05" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BLUETOOTH_HC05">
+<connects>
+<connect gate="G$1" pin="CTS" pad="PIN_CTS-I"/>
+<connect gate="G$1" pin="GND" pad="PIN_GND"/>
+<connect gate="G$1" pin="RTS" pad="PIN_RTS0"/>
+<connect gate="G$1" pin="RX" pad="PIN_RX-I"/>
+<connect gate="G$1" pin="TX" pad="PIN_TX-O"/>
+<connect gate="G$1" pin="VCC" pad="PIN_VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD8232">
+<gates>
+<gate name="G$1" symbol="AD8232" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AD8232">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="PIN_3.3V"/>
+<connect gate="G$1" pin="GND" pad="PIN_GND"/>
+<connect gate="G$1" pin="LA" pad="PIN_LA"/>
+<connect gate="G$1" pin="LO+" pad="PIN_LO+"/>
+<connect gate="G$1" pin="LO-" pad="PIN_LO-"/>
+<connect gate="G$1" pin="OUTPUT" pad="PIN_OUTPUT"/>
+<connect gate="G$1" pin="RA" pad="PIN_RA"/>
+<connect gate="G$1" pin="RL" pad="PIN_RL"/>
+<connect gate="G$1" pin="SDN" pad="PIN_SDN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4939,7 +5067,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R2" library="resistor" deviceset="R-US_" device="0204/7" value="10K"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="BLUETOOTH" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="LCD_I2C" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="LCA_SENSOR_PESO_A" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="LCA_SENSOR_PESO_B" library="pinhead" deviceset="PINHD-1X5" device=""/>
@@ -4950,12 +5077,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R4" library="resistor" deviceset="R-US_" device="0204/7" value="330"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="330"/>
 <part name="U$5" library="Bateria" deviceset="LIPOWER" device=""/>
+<part name="U$6" library="OpenHealth" deviceset="BLUETOOTH_HC05" device=""/>
+<part name="U$7" library="OpenHealth" deviceset="AD8232" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="5.08" y="137.16" size="1.778" layer="91">BLUETOOTH_KEY</text>
-<text x="5.08" y="149.86" size="1.778" layer="91">STATE</text>
 <text x="20.32" y="99.06" size="1.778" layer="91">SDN</text>
 </plain>
 <instances>
@@ -4973,7 +5100,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R2" gate="G$1" x="-71.12" y="154.94"/>
 <instance part="GND3" gate="1" x="-78.74" y="137.16"/>
 <instance part="GND4" gate="1" x="-106.68" y="137.16"/>
-<instance part="BLUETOOTH" gate="A" x="38.1" y="142.24"/>
 <instance part="LCD_I2C" gate="A" x="38.1" y="83.82"/>
 <instance part="LCA_SENSOR_PESO_A" gate="A" x="-2.54" y="144.78"/>
 <instance part="LCA_SENSOR_PESO_B" gate="A" x="-33.02" y="144.78"/>
@@ -4984,6 +5110,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="R4" gate="G$1" x="58.42" y="152.4" rot="R90"/>
 <instance part="R5" gate="G$1" x="66.04" y="152.4" rot="R90"/>
 <instance part="U$5" gate="G$1" x="-99.06" y="60.96"/>
+<instance part="U$6" gate="G$1" x="40.64" y="193.04" rot="R180"/>
+<instance part="U$7" gate="G$1" x="-68.58" y="165.1"/>
 </instances>
 <busses>
 </busses>
@@ -4998,11 +5126,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="LED_RGB" gate="G$1" pin="CATHODE"/>
 <wire x1="58.42" y1="124.46" x2="58.42" y2="127" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="BLUETOOTH" gate="A" pin="4"/>
-<wire x1="35.56" y1="142.24" x2="27.94" y2="142.24" width="0.1524" layer="91"/>
-<label x="5.08" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LCD_I2C" gate="A" pin="1"/>
@@ -5070,17 +5193,17 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="35.56" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 <label x="17.78" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND"/>
+<wire x1="20.32" y1="190.5" x2="10.16" y2="190.5" width="0.1524" layer="91"/>
+<label x="-10.16" y="190.5" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="LCD_I2C" gate="A" pin="2"/>
 <wire x1="35.56" y1="86.36" x2="27.94" y2="86.36" width="0.1524" layer="91"/>
 <label x="20.32" y="86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="BLUETOOTH" gate="A" pin="5"/>
-<wire x1="35.56" y1="139.7" x2="27.94" y2="139.7" width="0.1524" layer="91"/>
-<label x="5.08" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LCA_SENSOR_PESO_A" gate="A" pin="1"/>
@@ -5096,6 +5219,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="CONECTOR_B" gate="A" pin="1"/>
 <wire x1="-76.2" y1="116.84" x2="-68.58" y2="116.84" width="0.1524" layer="91"/>
 <label x="-66.04" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="VCC"/>
+<wire x1="20.32" y1="185.42" x2="10.16" y2="185.42" width="0.1524" layer="91"/>
+<label x="-10.16" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -5297,26 +5425,25 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="BLUETOOTH_RX" class="0">
 <segment>
-<pinref part="BLUETOOTH" gate="A" pin="2"/>
-<wire x1="35.56" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
-<label x="5.08" y="147.32" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="OPENHEALTH" gate="G$1" pin="8/TX3"/>
 <wire x1="-10.16" y1="86.36" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
 <label x="-2.54" y="86.36" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="RX"/>
+<wire x1="20.32" y1="170.18" x2="10.16" y2="170.18" width="0.1524" layer="91"/>
+<label x="-10.16" y="170.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BLUETOOTH_TX" class="0">
-<segment>
-<pinref part="BLUETOOTH" gate="A" pin="3"/>
-<wire x1="35.56" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
-<label x="5.08" y="144.78" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="OPENHEALTH" gate="G$1" pin="7/RX3"/>
 <wire x1="-10.16" y1="83.82" x2="-5.08" y2="83.82" width="0.1524" layer="91"/>
 <label x="-2.54" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="22.86" y1="175.26" x2="10.16" y2="175.26" width="0.1524" layer="91"/>
+<label x="-10.16" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D_SDA" class="0">
@@ -5513,10 +5640,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="-76.2" y1="71.12" x2="-66.04" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="71.12" x2="-66.04" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="71.12" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="OPENHEALTH" gate="G$1" pin="VIN"/>
 <wire x1="-66.04" y1="66.04" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="PIN_EN" class="0">
