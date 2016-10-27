@@ -27,3 +27,7 @@ Mejoras
 --NPN
 --Mux
 --
+
+* Libreria DIY *
+Link de esta libreria
+http://www.diymodules.org/eagle-show-object?type=usr&id=1012211169&part=diy-modules.lbr&device=LCD-I2C-CONVERTER
